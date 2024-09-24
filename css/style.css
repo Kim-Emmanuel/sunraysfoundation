@@ -199,7 +199,7 @@ button:focus {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 48px;
   border: 1px solid #60bc0f;
   border-radius: 0px;
@@ -568,6 +568,10 @@ button:focus {
 ============================================================================================ */
 .who_area {
   padding: 130px 0px 0px;
+}
+
+strong {
+  color: #60bc0f;
 }
 
 @media (max-width: 991px) {
@@ -3684,7 +3688,7 @@ h6 {
 /*----------------------------------------------------*/
 /*============== footer-area css ===============*/
 .footer-area {
-  background: #091b27;
+  background: #fff;
 }
 
 .single-footer-widget p {
@@ -3751,7 +3755,7 @@ h6 {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
-  color: #fff;
+  color: #333;
   margin-bottom: 28px;
 }
 
