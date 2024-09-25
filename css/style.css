@@ -202,7 +202,7 @@ button:focus {
   font-weight: 600;
   line-height: 48px;
   border: 1px solid #60bc0f;
-  border-radius: 0px;
+  border-radius: 3px;
   outline: none !important;
   box-shadow: none !important;
   text-align: center;
@@ -220,6 +220,8 @@ button:focus {
   background: #fdbb00 !important;
   border: 1px solid #fdbb00 !important;
   color: #000000;
+  border-radius: 3px;
+  padding: 0px 40px;
 }
 
 .primary_btn.yellow_btn:hover {
