@@ -666,6 +666,49 @@ strong {
   }
 }
 
+/* Start Our programs css */
+.program-button {
+  margin-bottom: 10px;
+  background-color: transparent;
+  /* Green */
+  border: 1px solid #60bc0f;
+  color: #333;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.program-button:hover {
+  background-color: #60bc0f;
+}
+
+.program-button.active {
+  background-color: #60bc0f;
+}
+
+.program-preview {
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  display: none;
+  transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
+}
+
+.program-preview.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* End Our programs area */
+
 .single_causes {
   padding: 50px;
   border-radius: 5px;
