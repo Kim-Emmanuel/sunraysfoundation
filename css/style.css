@@ -221,7 +221,7 @@ button:focus {
   border: 1px solid #fdbb00 !important;
   color: #000000;
   border-radius: 3px;
-  padding: 0px 40px;
+  padding: 0px 30px;
 }
 
 .primary_btn.yellow_btn:hover {
@@ -566,6 +566,80 @@ button:focus {
 
 /* End About Us Area css
 ============================================================================================ */
+
+
+/* Start Mission and vision Area css
+============================================================================================ */
+.mission_vision_area {
+  padding: 130px 0px 100px;
+}
+
+@media (max-width: 991px) {
+  .mission_vision_area {
+    padding: 70px 0px 40px;
+  }
+}
+
+/* End Mission and vision Area css
+============================================================================================ */
+
+/* Start Our History Area css
+============================================================================================ */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  /* Ensure overlay stays within container */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent black overlay */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  /* Hide overlay by default */
+  transition: opacity 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+  /* Zoom effect on hover */
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+  /* Show overlay on hover */
+}
+
+.our_history_area {
+  padding: 130px 0px 50px;
+}
+
+@media (max-width: 991px) {
+  .our_history_area {
+    padding: 70px 0px 40px;
+  }
+}
+
+/* End Our History Area css
+============================================================================================ */
+
+
 /* Start Causes Area css
 ============================================================================================ */
 .who_area {

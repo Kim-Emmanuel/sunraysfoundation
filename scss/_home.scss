@@ -72,6 +72,23 @@
 	}
 }
 
+.mission_vision_area {
+	padding: 130px 0px 100px;
+	@media (max-width: 991px) {
+		padding: 70px 0px 40px;
+	}
+}
+
+.our_history_area {
+  padding: 130px 0px 100px;
+}
+
+@media (max-width: 991px) {
+  .our_history_area {
+    padding: 70px 0px 40px;
+  }
+}
+
 .causes_area {
 	padding: 130px 0px 100px;
 	@media (max-width: 991px) {
