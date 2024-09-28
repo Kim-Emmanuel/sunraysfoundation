@@ -3910,6 +3910,43 @@ h6 {
   opacity: 1;
 }
 
+.footer-top {
+  background: #071721;
+  padding: 15px;
+
+}
+
+.footer-top .footer-text {
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.footer-top .footer-text a {
+  color: #60bc0f;
+  opacity: 1;
+}
+
+.social-icon a {
+  display: inline-block;  
+  width: 36px;
+  height: 36px;
+  border-radius: 50%; 
+  background-color: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+  color: white; 
+  text-align: center;
+  line-height: 36px; /* Vertically center content */
+  margin-left: 10px; /* Spacing between icons */
+}
+
+.social-icon a:hover {
+  background-color: #333; /* Turn white on hover */
+  color: #4CAF50; /* Green color on hover */
+}
+
+.social-icon i {
+  font-size: 18px; 
+}
+
 /*---------------------------------------------------- */
 
 .image-overlay {
