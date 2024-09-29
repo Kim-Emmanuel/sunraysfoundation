@@ -5,7 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="icon" href="img/logo.png" type="image/png">
 	<title>Sun Rays Foundation</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -46,7 +46,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-3 d-flex justify-content-start align-items-center">
+					<div class="col-12 col-md-3 d-flex justify-content-end align-items-center">
 						<div class="social-icon">
 							<a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
 							<a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
@@ -136,17 +136,59 @@
 	<!--================ Home Banner Area =================-->
 	<section class="home_banner_area">
 		<div class="banner_inner">
-			<div class="container">
-				<div class="banner_content">
-					<p class="upper_text">Compassionate With Hope</p>
-					<h2>Together, we shine brighter</h2>
-					<p>
-						Transforming lives through compassion and action. Join Sun Rays Foundation in empowering communities through
-						education and healthcare initiatives.
-					</p>
-					<a class="primary_btn mr-20" href="#">Sponsor</a>
+			<div class="slide active" style="background-image: url('img/banner/home-banner.png');">
+				<div class="container">
+					<div class="banner_content">
+						<p class="upper_text">Compassionate With Hope</p>
+						<h2>Together, we shine brighter</h2>
+						<p>
+							Transforming lives through compassion and action. Join Sun Rays Foundation in empowering communities
+							through
+							education and healthcare initiatives.
+						</p>
+						<a class="primary_btn mr-20" href="#">Sponsor</a>
+					</div>
 				</div>
 			</div>
+
+			<div class="slide" style="background-image: url('img//about-img.png');">
+				<div class="container">
+					<div class="banner_content">
+						<p class="upper_text">Another Slide</p>
+						<h2>This is a different slide!</h2>
+						<p>
+							Add your content here...
+						</p>
+						<a class="primary_btn mr-20" href="#">Learn More</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide" style="background-image: url('img/gallery/education.jpg');">
+				<div class="container">
+					<div class="banner_content">
+						<p class="upper_text">Another Slide</p>
+						<h2>This is a different slide!</h2>
+						<p>
+							Add your content here...
+						</p>
+						<a class="primary_btn mr-20" href="#">Contact Us</a>
+					</div>
+				</div>
+			</div>
+
+			<button class="prev-slide">
+				<svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M8.84182 3.13514C9.04327 3.32401 9.05348 3.64042 8.86462 3.84188L5.43521 7.49991L8.86462 11.1579C9.05348 11.3594 9.04327 11.6758 8.84182 11.8647C8.64036 12.0535 8.32394 12.0433 8.13508 11.8419L4.38508 7.84188C4.20477 7.64955 4.20477 7.35027 4.38508 7.15794L8.13508 3.15794C8.32394 2.95648 8.64036 2.94628 8.84182 3.13514Z"
+						fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+				</svg></button>
+			<button class="next-slide"><svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
+						fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+				</svg></button>
 		</div>
 	</section>
 	<!--================ End Home Banner Area =================-->
@@ -290,12 +332,12 @@
 	<!--================ End Our History Programs Area =================-->
 
 	<!--================ Start History Area =================-->
-	<section class="who_area">
+	<section class="who_area jumbotron jumbotron-fluid position-relative">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 mb-5">
-					<h2>OUR STORIES FROM THE FIELD.</h2>
-					<p>
+					<h2 class="text-white">OUR STORIES FROM THE FIELD.</h2>
+					<p class="text-white">
 						<strong>Sunrays Foundation(SRF)</strong>, is a Humanitarian non-profit organization established in 2019 by a
 						group of South Sudanese Youth. SRF was founded with the aim of supporting the vulnerable in the community
 						with the key goal of providing sustainable community-based solutions aimed towards strengthening resilience
@@ -940,7 +982,8 @@
 						<div class="single-footer-widget tp_widgets">
 							<h4 class="footer_title large_title">Our Mission</h4>
 							<p>
-								To promote Inclusive social-economic empowerment and right-based participation of the most vulnerable
+								To promote Inclusive social-economic empowerment and right-based participation of the
+								most vulnerable
 								and marginalized children, youth, women, and people with disabilities for sustainable.
 							</p>
 							<p>
@@ -1037,6 +1080,7 @@
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
 	<script src="js/programs.js"></script>
+	<script src="js/slider.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
