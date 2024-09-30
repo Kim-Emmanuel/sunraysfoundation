@@ -662,6 +662,77 @@ button:focus {
   }
 }
 
+.mission_vision_section {
+  background-color: #93C740;
+  /* Green background */
+  color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  /* Space between sections */
+}
+
+.mission_vision_section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.mission_vision_section img {
+  width: 100%;
+  /* Make images responsive */
+  height: auto;
+  display: block;
+  /* Prevent image from affecting layout */
+  margin: 0 auto 20px;
+  /* Center and add bottom margin */
+  max-width: 500px;
+  /* Limit maximum image width */
+
+}
+
+/* Media query for responsiveness */
+@media (min-width: 768px) {
+  .mission_vision_section {
+    display: flex;
+    /* Use flexbox for layout on larger screens */
+    align-items: center;
+  }
+
+  .mission_vision_section img {
+    margin-right: 30px;
+    /* Space between image and text */
+    flex-shrink: 0;
+    /* Prevent image from shrinking */
+    width: 16%;
+    /* Adjust image width as needed */
+    max-width: none;
+    /* Remove max-width restriction */
+
+  }
+
+  .mission_vision_section .text-content {
+    flex-grow: 1;
+    /* Allow text content to take up remaining space */
+  }
+}
+
+/* Reverse layout for mission section */
+.mission_vision_section.mission {
+  flex-direction: row-reverse;
+  /* Reverse the flex direction */
+}
+
+@media (min-width: 768px) {
+
+  /* Adjustments for larger screens (mission section) */
+  .mission_vision_section.mission img {
+    margin-right: 0;
+    /* Remove right margin */
+    margin-left: 30px;
+    /* Add left margin */
+  }
+}
+
 /* End Mission and vision Area css
 ============================================================================================ */
 
@@ -768,10 +839,11 @@ strong {
 
 .program-button:hover {
   background-color: #60bc0f;
+  color: white;
 }
 
 .program-button.active {
-  background-color: #60bc0f;
+  background-color: #93C740;
 }
 
 .program-preview {
@@ -788,6 +860,17 @@ strong {
   visibility: visible;
   transform: translateY(0);
 }
+
+.program-button.active {
+            background-color: #93C740; /* Example active color */
+            color: white;
+        }
+        .program-preview {
+            display: none; /* Initially hide all previews */
+        }
+        .program-preview.show {
+            display: block;
+        }
 
 /* End Our programs area */
 
