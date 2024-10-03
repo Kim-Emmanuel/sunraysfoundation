@@ -24,7 +24,7 @@
 	============================================================================================ */
 	/* Home Banner Area css
 	============================================================================================ */
-	.home_banner_area .banner_inner {
+	.home_banner_area .carousel-inner {
 		padding: 100px 0px;
 	}
 
@@ -204,17 +204,17 @@
 		min-height: 500px;
 	}
 
-	.home_banner_area .banner_inner {
+	.home_banner_area .carousel-inner {
 		min-height: 500px;
 	}
 
-	.home_banner_area .banner_inner .banner_content {
+	.home_banner_area .carousel-inner .carousel-caption {
 		margin-top: 0px;
 	}
 
 	/* Blog Page Area css
 	============================================================================================ */
-	.blog_banner .banner_inner .blog_b_text h2 {
+	.blog_banner .carousel-inner .blog_b_text h2 {
 		font-size: 40px;
 		line-height: 50px;
 	}
@@ -226,15 +226,15 @@
 
 	/* End Blog Page Area css
 	============================================================================================ */
-	.home_banner_area .banner_inner .banner_content h3 {
+	.home_banner_area .carousel-inner .carousel-caption h3 {
 		font-size: 30px;
 	}
 
-	.home_banner_area .banner_inner .banner_content p br {
+	.home_banner_area .carousel-inner .carousel-caption p br {
 		display: none;
 	}
 
-	.home_banner_area .banner_inner .banner_content h3 span {
+	.home_banner_area .carousel-inner .carousel-caption h3 span {
 		line-height: 45px;
 		padding-bottom: 0px;
 		padding-top: 0px;
@@ -281,7 +281,7 @@
 
 	/* Home Banner Area css
 	============================================================================================ */
-	.home_banner_area .banner_inner .banner_content h2 {
+	.home_banner_area .carousel-inner .carousel-caption h2 {
 		font-size: 28px;
 		line-height: 38px;
 	}
@@ -290,19 +290,19 @@
 		min-height: 500px;
 	}
 
-	.home_banner_area .banner_inner {
+	.home_banner_area .carousel-inner {
 		min-height: 500px;
 	}
 
-	.blog_banner .banner_inner .blog_b_text {
+	.blog_banner .carousel-inner .blog_b_text {
 		margin-top: 0px;
 	}
 
-	.home_banner_area .banner_inner .banner_content img {
+	.home_banner_area .carousel-inner .carousel-caption img {
 		display: none;
 	}
 
-	.home_banner_area .banner_inner .banner_content h5 {
+	.home_banner_area .carousel-inner .carousel-caption h5 {
 		margin-top: 0px;
 	}
 
@@ -328,7 +328,7 @@
 		line-height: 30px;
 	}
 
-	.blog_banner .banner_inner .blog_b_text h2 {
+	.blog_banner .carousel-inner .blog_b_text h2 {
 		font-size: 28px;
 		line-height: 38px;
 	}
@@ -355,18 +355,18 @@
 
 	/* Home Banner Area css
 	============================================================================================ */
-	.home_banner_area .banner_inner .banner_content {
+	.home_banner_area .carousel-inner .carousel-caption {
 		padding: 30px 15px;
 		margin-top: 0px;
 	}
 
-	.home_banner_area .banner_inner .banner_content h3 {
+	.home_banner_area .carousel-inner .carousel-caption h3 {
 		font-size: 24px;
 	}
 
 	/* End Home Banner Area css
 	============================================================================================ */
-	.banner_area .banner_inner .banner_content h2 {
+	.banner_area .carousel-inner .carousel-caption h2 {
 		font-size: 32px;
 	}
 

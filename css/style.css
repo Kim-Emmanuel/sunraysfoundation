@@ -387,124 +387,40 @@ button:focus {
 }
 
 /*---------------------------------------------------- */
-/*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
-.home_banner_area {
-  z-index: 1;
-  min-height: 900px;
-  display: flex;
-  background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../img/banner/home-banner.png) no-repeat scroll center center;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-}
+.home_banner_area {}
 
-.slide {
-  display: none;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.slide.active {
-  display: block;
-  opacity: 1;
-}
-
-.banner_content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 10;
-}
-
-/* Target h2 and p within inactive slides */
-.slide:not(.active) .banner_content h2,
-.slide:not(.active) .banner_content p {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.slide.active .banner_content h2,
-.slide.active .banner_content p {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Navigation Arrows */
-.prev-slide,
-.next-slide {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  z-index: 10;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.prev-slide:hover,
-.next-slide:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.prev-slide {
-  left: 20px;
-}
-
-.next-slide {
-  right: 20px;
-}
-
-.home_banner_area:hover .prev-slide,
-.home_banner_area:hover .next-slide {
-  opacity: 1;
-}
-
-.home_banner_area .banner_inner {
+.home_banner_area .carousel-inner {
   width: 100%;
   display: flex;
 }
 
-.home_banner_area .banner_inner .container {
+.home_banner_area .carousel-inner .container {
   vertical-align: middle;
   align-self: center;
 }
 
-.home_banner_area .banner_inner .banner_content {
+.home_banner_area .carousel-inner .carousel-caption {
   color: #fff;
   vertical-align: middle;
   align-self: center;
   text-align: center;
 }
 
-.home_banner_area .banner_inner .banner_content .upper_text {
-  font-size: 46px;
+.home_banner_area .carousel-inner .carousel-caption .upper_text {
+  font-size: 50px;
   text-transform: uppercase;
   color: #fdbb00;
 }
 
 @media (max-width: 767px) {
-  .home_banner_area .banner_inner .banner_content .upper_text {
+  .home_banner_area .carousel-inner .carousel-caption .upper_text {
     font-size: 35px;
   }
 }
 
-.home_banner_area .banner_inner .banner_content h2 {
+.home_banner_area .carousel-inner .carousel-caption h2 {
   color: #ffffff;
   margin-top: 0px;
   font-size: 50px;
@@ -515,14 +431,14 @@ button:focus {
   margin-bottom: 20px;
 }
 
-.home_banner_area .banner_inner .banner_content p {
+.home_banner_area .carousel-inner .carousel-caption p {
   color: #f9f9ff;
   max-width: 680px;
   margin: 0px auto 45px;
 }
 
 @media (max-width: 767px) {
-  .home_banner_area .banner_inner .banner_content .mr-20 {
+  .home_banner_area .carousel-inner .carousel-caption .mr-20 {
     margin-right: 0;
     margin-bottom: 15px;
   }
@@ -534,7 +450,7 @@ button:focus {
   min-height: 500px;
 }
 
-.banner_area .banner_inner {
+.banner_area .carousel-inner {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -543,7 +459,7 @@ button:focus {
   z-index: 1;
 }
 
-.banner_area .banner_inner .overlay {
+.banner_area .carousel-inner .overlay {
   background: linear-gradient(0deg, rgba(6, 13, 1, 0.6), rgba(6, 13, 1, 0.6)), url(../img/banner/banner.jpg) no-repeat scroll center center;
   background-size: cover;
   position: absolute;
@@ -556,7 +472,7 @@ button:focus {
   opacity: 1;
 }
 
-.banner_area .banner_inner .banner_content h2 {
+.banner_area .carousel-inner .carousel-caption h2 {
   color: #fff;
   font-size: 48px;
   font-family: "Roboto", sans-serif;
@@ -564,14 +480,130 @@ button:focus {
   font-weight: 500;
 }
 
-.banner_area .banner_inner .banner_content p {
+.banner_area .carousel-inner .carousel-caption p {
   color: #ffffff;
   margin-bottom: 0;
+}
+
+/* Custom Styles */
+.home_banner_area {
+  position: relative;
+  overflow: hidden;
+
+  z-index: 1;
+  min-height: 900px;
+  background-size: cover;
+}
+
+.carousel-item {
+  min-height: 900px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 1, 10, 0.5);
+}
+
+.carousel-caption {
+  bottom: 30%;
+  text-align: center;
+  z-index: 2;
+}
+
+.carousel-caption h2 {
+
+  animation: slideUp 1s forwards;
+}
+
+.carousel-caption p {
+
+  animation: fadeIn 1s forwards;
+}
+
+.carousel-caption .primary_btn {
+  animation: zoomIn 1s forwards;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 2%;
+}
+
+.carousel-control-next {
+  right: 2%;
+}
+
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.carousel-indicators .active {
+  background-color: #fdbb00;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* End Home Banner Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
+
 /*----------------------------------------------------*/
 /* Start About Us Area css
 ============================================================================================ */
@@ -653,7 +685,7 @@ button:focus {
 /* Start Mission and vision Area css
 ============================================================================================ */
 .mission_vision_area {
-  padding: 130px 0px 100px;
+  padding: 50px 0px 40px;
 }
 
 @media (max-width: 991px) {
@@ -663,11 +695,10 @@ button:focus {
 }
 
 .mission_vision_section {
-  background-color: #93C740;
   /* Green background */
   color: white;
   padding: 30px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* Space between sections */
 }
 
@@ -796,7 +827,7 @@ button:focus {
 /* Start Causes Area css
 ============================================================================================ */
 .who_area {
-  padding: 130px 0px 0px;
+  padding: 130px 0px 70px;
 }
 
 strong {
@@ -862,15 +893,19 @@ strong {
 }
 
 .program-button.active {
-            background-color: #93C740; /* Example active color */
-            color: white;
-        }
-        .program-preview {
-            display: none; /* Initially hide all previews */
-        }
-        .program-preview.show {
-            display: block;
-        }
+  background-color: #93C740;
+  /* Example active color */
+  color: white;
+}
+
+.program-preview {
+  display: none;
+  /* Initially hide all previews */
+}
+
+.program-preview.show {
+  display: block;
+}
 
 /* End Our programs area */
 
