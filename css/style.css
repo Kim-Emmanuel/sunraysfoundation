@@ -376,6 +376,12 @@ button:focus {
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
+/* Target the specific button within .header_area */
+.header_area.header_area.navbar_fixed .primary_btn.yellow_btn:hover {
+  color: #E58824 !important;
+  /* Change this to your desired hover color */
+}
+
 .header_area.navbar_fixed .main_menu .nav-item .nav-link {
   color: #333;
   line-height: 70px;
