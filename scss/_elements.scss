@@ -3,36 +3,45 @@
 .mb-20 {
 	margin-bottom: 20px;
 }
+
 .mb-30 {
 	margin-bottom: 30px;
 }
 
 .sample-text-area {
 	padding: 100px 0px;
+
 	.title_color {
 		margin-bottom: 30px;
 	}
+
 	p {
 		line-height: 26px;
+
 		b {
 			font-weight: bold;
 			color: $primary-color;
 		}
+
 		i {
 			color: $primary-color;
 			font-style: italic;
 		}
+
 		sup {
 			color: $primary-color;
 			font-style: italic;
 		}
+
 		sub {
 			color: $primary-color;
 			font-style: italic;
 		}
+
 		del {
 			color: $primary-color;
 		}
+
 		u {
 			color: $primary-color;
 		}
@@ -48,164 +57,204 @@
 		color: $title-color;
 	}
 }
+
 .title_color {
 	color: $title-color;
 }
+
 .button-group-area {
 	margin-top: 15px;
+
 	&:nth-child(odd) {
 		margin-top: 40px;
 	}
+
 	&:first-child {
 		margin-top: 0px;
 	}
+
 	.theme_btn {
 		margin-right: 10px;
 	}
+
 	.link {
 		text-decoration: underline;
 		color: $title-color;
 		background: transparent;
+
 		&:hover {
 			color: #fff;
 		}
 	}
+
 	.disable {
 		background: transparent;
 		color: #007bff;
 		cursor: not-allowed;
+
 		&:before {
 			display: none;
 		}
 	}
 }
+
 .primary {
 	background: #52c5fd;
+
 	&:before {
 		background: #2faae6;
 	}
 }
+
 .success {
 	background: #4cd3e3;
+
 	&:before {
 		background: #2ebccd;
 	}
 }
+
 .info {
 	color: #000000;
+
 	&:before {
 		color: #000000;
 	}
+
 	.valid {
 		color: #ffffff;
 	}
 }
+
 .warning {
 	background: #f4e700;
+
 	&:before {
 		background: #e1d608;
 	}
 }
+
 .danger {
 	background: #f54940;
+
 	&:before {
 		background: #e13b33;
 	}
 }
-.border_btn {
-}
+
+.border_btn {}
+
 .primary-border {
 	background: transparent;
 	border: 1px solid #52c5fd;
 	color: #52c5fd;
+
 	&:before {
 		background: #52c5fd;
 	}
 }
+
 .success-border {
 	background: transparent;
 	border: 1px solid #4cd3e3;
 	color: #4cd3e3;
+
 	&:before {
 		background: #4cd3e3;
 	}
 }
+
 .info-border {
 	background: transparent;
 	border: 1px solid #38a4ff;
 	color: #38a4ff;
+
 	&:before {
 		background: #38a4ff;
 	}
 }
+
 .warning-border {
 	background: #fff;
 	border: 1px solid #f4e700;
 	color: #f4e700;
+
 	&:before {
 		background: #f4e700;
 	}
 }
+
 .danger-border {
 	background: transparent;
 	border: 1px solid #f54940;
 	color: #f54940;
+
 	&:before {
 		background: #f54940;
 	}
 }
+
 .link-border {
 	background: transparent;
 	border: 1px solid $primary-color;
 	color: $primary-color;
+
 	&:before {
 		background: $primary-color;
 	}
 }
+
 .radius {
 	border-radius: 3px;
 }
+
 .circle {
 	border-radius: 20px;
 }
+
 .arrow {
 	span {
 		padding-left: 5px;
 	}
 }
+
 .e-large {
 	line-height: 50px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+
 .large {
 	line-height: 45px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+
 .medium {
 	line-height: 30px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+
 .small {
 	line-height: 25px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+
 .general {
 	line-height: 38px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+
 /*==============End Elements Button Area css ================*/
 
 /* =================================== */
 /*  Elements Page Styles
 /* =================================== */
 /*---------- Start Elements Page -------------*/
-.whole-wrap {
-}
+.whole-wrap {}
 
 .generic-banner {
 	margin-top: 60px;
@@ -309,7 +358,7 @@ sup,
 sub,
 u,
 del {
-	color: #f8b600;
+	color: #E58824;
 }
 
 h1 {
@@ -345,8 +394,7 @@ h6 {
 	color: #777777;
 }
 
-.button-area {
-}
+.button-area {}
 
 .button-area .border-top-generic {
 	padding: 70px 15px;
@@ -448,25 +496,25 @@ h6 {
 
 .genric-btn.primary {
 	color: #fff;
-	background: #f8b600;
+	background: #E58824;
 	border: 1px solid transparent;
 }
 
 .genric-btn.primary:hover {
-	color: #f8b600;
-	border: 1px solid #f8b600;
+	color: #E58824;
+	border: 1px solid #E58824;
 	background: #fff;
 }
 
 .genric-btn.primary-border {
-	color: #f8b600;
-	border: 1px solid #f8b600;
+	color: #E58824;
+	border: 1px solid #E58824;
 	background: #fff;
 }
 
 .genric-btn.primary-border:hover {
 	color: #fff;
-	background: #f8b600;
+	background: #E58824;
 	border: 1px solid transparent;
 }
 
@@ -602,7 +650,7 @@ h6 {
 .generic-blockquote {
 	padding: 30px 50px 30px 30px;
 	background: #fff;
-	border-left: 2px solid #f8b600;
+	border-left: 2px solid #E58824;
 }
 
 @media (max-width: 991px) {
@@ -742,7 +790,7 @@ h6 {
 	position: absolute;
 	width: 14px;
 	height: 14px;
-	border: 3px solid #f8b600;
+	border: 3px solid #E58824;
 	background: #fff;
 	top: 4px;
 	left: 0;
@@ -755,7 +803,7 @@ h6 {
 
 .ordered-list li {
 	list-style-type: decimal-leading-zero;
-	color: #f8b600;
+	color: #E58824;
 	font-weight: 500;
 	line-height: 1.82em !important;
 }
@@ -768,7 +816,7 @@ h6 {
 .ordered-list-alpha li {
 	margin-left: 30px;
 	list-style-type: lower-alpha;
-	color: #f8b600;
+	color: #E58824;
 	font-weight: 500;
 	line-height: 1.82em !important;
 }
@@ -781,7 +829,7 @@ h6 {
 .ordered-list-roman li {
 	margin-left: 30px;
 	list-style-type: lower-roman;
-	color: #f8b600;
+	color: #E58824;
 	font-weight: 500;
 	line-height: 1.82em !important;
 }
@@ -853,7 +901,7 @@ h6 {
 
 .single-input-primary:focus {
 	outline: none;
-	border: 1px solid #f8b600;
+	border: 1px solid #E58824;
 }
 
 .single-input-accent {
@@ -907,14 +955,14 @@ h6 {
 	cursor: pointer;
 }
 
-.default-switch input + label {
+.default-switch input+label {
 	position: absolute;
 	top: 1px;
 	left: 1px;
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-	background: #f8b600;
+	background: #E58824;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	-o-transition: all 0.2s;
@@ -923,7 +971,7 @@ h6 {
 	cursor: pointer;
 }
 
-.default-switch input:checked + label {
+.default-switch input:checked+label {
 	left: 19px;
 }
 
@@ -951,7 +999,7 @@ h6 {
 	opacity: 0;
 }
 
-.primary-switch input + label {
+.primary-switch input+label {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -961,7 +1009,7 @@ h6 {
 	height: 100%;
 }
 
-.primary-switch input + label:before {
+.primary-switch input+label:before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -979,7 +1027,7 @@ h6 {
 	transition: all 0.2s;
 }
 
-.primary-switch input + label:after {
+.primary-switch input+label:after {
 	content: "";
 	position: absolute;
 	top: 1px;
@@ -996,12 +1044,12 @@ h6 {
 	cursor: pointer;
 }
 
-.primary-switch input:checked + label:after {
+.primary-switch input:checked+label:after {
 	left: 19px;
 }
 
-.primary-switch input:checked + label:before {
-	background: #f8b600;
+.primary-switch input:checked+label:before {
+	background: #E58824;
 }
 
 .confirm-switch {
@@ -1024,7 +1072,7 @@ h6 {
 	opacity: 0;
 }
 
-.confirm-switch input + label {
+.confirm-switch input+label {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1034,7 +1082,7 @@ h6 {
 	height: 100%;
 }
 
-.confirm-switch input + label:before {
+.confirm-switch input+label:before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -1052,7 +1100,7 @@ h6 {
 	cursor: pointer;
 }
 
-.confirm-switch input + label:after {
+.confirm-switch input+label:after {
 	content: "";
 	position: absolute;
 	top: 1px;
@@ -1069,11 +1117,11 @@ h6 {
 	cursor: pointer;
 }
 
-.confirm-switch input:checked + label:after {
+.confirm-switch input:checked+label:after {
 	left: 19px;
 }
 
-.confirm-switch input:checked + label:before {
+.confirm-switch input:checked+label:before {
 	background: #4cd3e3;
 }
 
@@ -1097,7 +1145,7 @@ h6 {
 	opacity: 0;
 }
 
-.primary-checkbox input + label {
+.primary-checkbox input+label {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1109,13 +1157,14 @@ h6 {
 	cursor: pointer;
 	border: 1px solid #f1f1f1;
 }
+
 .single-defination {
 	h4 {
 		color: $title-color;
 	}
 }
 
-.primary-checkbox input:checked + label {
+.primary-checkbox input:checked+label {
 	background: url(../img/elements/primary-check.png) no-repeat center center/cover;
 	border: none;
 }
@@ -1140,7 +1189,7 @@ h6 {
 	opacity: 0;
 }
 
-.confirm-checkbox input + label {
+.confirm-checkbox input+label {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1153,7 +1202,7 @@ h6 {
 	border: 1px solid #f1f1f1;
 }
 
-.confirm-checkbox input:checked + label {
+.confirm-checkbox input:checked+label {
 	background: url(../img/elements/success-check.png) no-repeat center center/cover;
 	border: none;
 }
@@ -1178,7 +1227,7 @@ h6 {
 	opacity: 0;
 }
 
-.disabled-checkbox input + label {
+.disabled-checkbox input+label {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1196,7 +1245,7 @@ h6 {
 	z-index: 3;
 }
 
-.disabled-checkbox input:checked + label {
+.disabled-checkbox input:checked+label {
 	background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
 	border: none;
 }
@@ -1221,7 +1270,7 @@ h6 {
 	opacity: 0;
 }
 
-.primary-radio input + label {
+.primary-radio input+label {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1234,7 +1283,7 @@ h6 {
 	border: 1px solid #f1f1f1;
 }
 
-.primary-radio input:checked + label {
+.primary-radio input:checked+label {
 	background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
 	border: none;
 }
@@ -1259,7 +1308,7 @@ h6 {
 	opacity: 0;
 }
 
-.confirm-radio input + label {
+.confirm-radio input+label {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1272,7 +1321,7 @@ h6 {
 	border: 1px solid #f1f1f1;
 }
 
-.confirm-radio input:checked + label {
+.confirm-radio input:checked+label {
 	background: url(../img/elements/success-radio.png) no-repeat center center/cover;
 	border: none;
 }
@@ -1297,7 +1346,7 @@ h6 {
 	opacity: 0;
 }
 
-.disabled-radio input + label {
+.disabled-radio input+label {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1314,16 +1363,19 @@ h6 {
 	cursor: not-allowed;
 	z-index: 3;
 }
+
 .unordered-list {
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
 }
+
 .ordered-list {
 	list-style: none;
 	padding: 0px;
 }
-.disabled-radio input:checked + label {
+
+.disabled-radio input:checked+label {
 	background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
 	border: none;
 }
@@ -1363,12 +1415,12 @@ h6 {
 }
 
 .default-select .nice-select .list .option.selected {
-	color: #f8b600;
+	color: #E58824;
 	background: transparent;
 }
 
 .default-select .nice-select .list .option:hover {
-	color: #f8b600;
+	color: #E58824;
 	background: transparent;
 }
 
@@ -1410,9 +1462,11 @@ h6 {
 	width: 100%;
 	padding: 10px 0 10px 0px;
 }
+
 .mt-10 {
 	margin-top: 10px;
 }
+
 .form-select .nice-select .list .option {
 	font-weight: 300;
 	-webkit-transition: all 0.3s ease 0s;
@@ -1426,12 +1480,12 @@ h6 {
 }
 
 .form-select .nice-select .list .option.selected {
-	color: #f8b600;
+	color: #E58824;
 	background: transparent;
 }
 
 .form-select .nice-select .list .option:hover {
-	color: #f8b600;
+	color: #E58824;
 	background: transparent;
 }
 
