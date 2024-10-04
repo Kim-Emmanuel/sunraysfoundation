@@ -492,7 +492,9 @@ button:focus {
 
   z-index: 1;
   min-height: 900px;
+  width: 100%;
   background-size: cover;
+  background-position: center;
 }
 
 .carousel-item {
@@ -2390,7 +2392,6 @@ strong {
   height: 420px;
   margin-bottom: 80px;
 }
-
 
 
 .contact_info .info_item {
