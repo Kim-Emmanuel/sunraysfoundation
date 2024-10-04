@@ -392,6 +392,28 @@ button:focus {
   /* background-color: #ffffff; */
 }
 
+/* Center button on medium screens and above */
+/* @media (min-width: 768px) {
+  .donate-btn-wrapper {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+} */
+
+
+/* Reset to default positioning on extra large screens and above */
+/* @media (min-width: 992px) { */
+
+  /* Adjust the breakpoint if needed */
+  /* .donate-btn-wrapper {
+    position: static; */
+    /* Reset to default positioning */
+    /* left: auto;
+    transform: none;
+  } */
+/* } */
+
 /*---------------------------------------------------- */
 /* Home Banner Area css
 ============================================================================================ */
@@ -415,7 +437,7 @@ button:focus {
 }
 
 .home_banner_area .carousel-inner .carousel-caption .upper_text {
-  font-size: 50px;
+  font-size: 45px;
   text-transform: uppercase;
   color: #E58824;
 }
@@ -857,6 +879,19 @@ strong {
     padding: 70px 0px 40px;
   }
 }
+
+/* Start Our impacts css */
+.our-impact {
+  padding: 130px 0px 100px;
+}
+
+@media (max-width: 991px) {
+  .our-impact {
+    padding: 70px 0px 40px;
+  }
+}
+
+/* End Our impacts css */
 
 /* Start Our programs css */
 .program-button {
