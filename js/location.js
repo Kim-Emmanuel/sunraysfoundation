@@ -58,3 +58,22 @@ $(document).ready(function () {
   // ...add similar else if blocks for other countries... 
 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the current page URL
+  const currentPage = window.location.pathname.split("/").pop(); // e.g., "south-sudan.html"
+
+  // Select all the country flag links
+  const countryLinks = document.querySelectorAll('.country-flag');
+
+  // Iterate through the links
+  countryLinks.forEach(link => {
+    // Get the "data-target" attribute (e.g., "south-sudan")
+    const targetCountry = link.getAttribute('data-target');
+
+    // Compare with the current page URL (without ".html")
+    if (targetCountry === currentPage.replace('.html', '')) {
+      link.classList.add('active'); 
+    }
+  });
+});
