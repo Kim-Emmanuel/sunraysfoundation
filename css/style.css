@@ -405,11 +405,11 @@ button:focus {
 /* Reset to default positioning on extra large screens and above */
 /* @media (min-width: 992px) { */
 
-  /* Adjust the breakpoint if needed */
-  /* .donate-btn-wrapper {
+/* Adjust the breakpoint if needed */
+/* .donate-btn-wrapper {
     position: static; */
-    /* Reset to default positioning */
-    /* left: auto;
+/* Reset to default positioning */
+/* left: auto;
     transform: none;
   } */
 /* } */
@@ -4195,6 +4195,38 @@ h6 {
 .social-icon i {
   font-size: 18px;
 }
+
+/* Start Our location  */
+.country-flag {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.country-flag:hover {
+  transform: scale(1.1);
+}
+
+.active-page {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ... other styles ... */
+
+.country-container.active {
+  background-color: #f0f0f0;
+  /* Example background color */
+  border: 2px solid #007bff;
+  /* Example border */
+}
+
+
+/* End Our location  */
 
 /*---------------------------------------------------- */
 
