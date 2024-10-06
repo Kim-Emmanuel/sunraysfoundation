@@ -7,7 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/logo.png" type="image/png">
 	<title>Sun Rays Foundation</title>
+	<meta name="description"
+		content="Sun Rays Foundation is a non-profit organization dedicated to empowering communities through education and healthcare initiatives. Learn how you can make a difference.">
 	<!-- Bootstrap CSS -->
+	<link rel="preload" href="css/style.css" as="style" />
+	<link rel="preload" href="css/responsive.css" as="style" />
+	<link rel="preload" href="css/bootstrap.css" as="style" />
+	<link rel="preload" as="style" href="vendors/linericon/style.css">
+	<link rel="preload" as="style" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="preload" as="style" href="vendors/nice-select/css/nice-select.css">
+
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -16,7 +25,8 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style" />
+	<link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
@@ -155,7 +165,7 @@
 				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 			</ol>
 			<div class="carousel-inner">
-				<div class="carousel-item active" style="background-image: url('img/banner/home-banner.png')">
+				<div class="carousel-item active" style="background-image: url('img/banner/home-banner.png')" loading="lazy">
 					<div class="container">
 						<div class="carousel-caption">
 							<p class="upper_text">Give a hand</p>
@@ -169,7 +179,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="carousel-item" style="background-image: url('img/gallery/education.jpg')">
+				<div class="carousel-item" style="background-image: url('img/gallery/education.jpg')" loading="lazy">
 					<div class="container">
 						<div class="carousel-caption">
 							<p class="upper_text">Empowering Futures</p>
@@ -179,11 +189,11 @@
 								lasting impact on their lives.
 							</p>
 							<a class="primary_btn mr-20" href="#">Donate Now</a>
-							<a class="primary_btn yellow_btn text-white" href="causes.html">Learn More</a>
+							<a class="primary_btn yellow_btn text-white" href="#">Learn More</a>
 						</div>
 					</div>
 				</div>
-				<div class="carousel-item" style="background-image: url('img/about-img.png')">
+				<div class="carousel-item" style="background-image: url('img/about-img.png')" loading="lazy">
 					<div class="container">
 						<div class="carousel-caption">
 							<p class="upper_text">Health for All</p>
@@ -235,8 +245,8 @@
 					<a href="#" class="primary_btn mt-3 mr-20">Read More</a>
 				</div>
 				<div class="col-md-6 mb-5">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+					<div class="embed-responsive embed-responsive-16by9" loading="lazy">
+						<iframe title="myFrame" class="embed-responsive-item" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
 							allowfullscreen></iframe>
 					</div>
 				</div>
@@ -258,10 +268,10 @@
 				<h2 class="mb-30 text-white">Vision</h2>
 				<div class="row">
 					<div class="col-md-3 image-container">
-						<img src="img/gallery/education.jpg" alt="" class="img-fluid">
+						<img src="img/gallery/education.jpg" alt="" class="img-fluid" loading="lazy">
 					</div>
 					<div class="col-md-9 mt-sm-20 left-align-p">
-						<p>A dependable and sustainable society able to take charge of their social and economic well-being.</p>
+						<p class="text-white">A dependable and sustainable society able to take charge of their social and economic well-being.</p>
 					</div>
 				</div>
 			</div>
@@ -269,13 +279,13 @@
 				<h2 class="mb-30 text-white">Mission</h2>
 				<div class="row">
 					<div class="col-md-9">
-						<p class="text-left">To promote Inclusive social-economic empowerment and right-based participation of the
+						<p class="text-left text-white">To promote Inclusive social-economic empowerment and right-based participation of the
 							most vulnerable and marginalized children, youth, women, and people with disabilities for sustainable
 							development.
 						</p>
 					</div>
 					<div class="col-md-3 image-container">
-						<img src="img/about-img.png" alt="" class="img-fluid">
+						<img src="img/about-img.png" alt="" class="img-fluid" loading="lazy">
 					</div>
 				</div>
 			</div>
@@ -293,8 +303,8 @@
 			<div class="row">
 
 				<div class="col-md-3 col-lg-4 col-md-6 mb-4">
-					<div class="image-container">
-						<img src="img/gallery/education.jpg" alt="2019 Image">
+					<div class="img-fluid image-container">
+						<img src="img/gallery/education.jpg" alt="2019 Image" loading="lazy">
 						<div class="overlay">
 							<div class="text-center">
 								<h3 class="text-white"><strong>CELEBRATION DAY</strong></h3>
@@ -308,8 +318,8 @@
 				</div>
 
 				<div class="col-md-3 col-lg-4 col-md-6 mb-4">
-					<div class="image-container">
-						<img src="img/gallery/education.jpg" alt="2020 Image">
+					<div class="img-fluid image-container">
+						<img src="img/gallery/education.jpg" alt="2020 Image" loading="lazy">
 						<div class="overlay">
 							<div class="text-center">
 								<h3 class="text-white"><strong>FORMATION</strong></h3>
@@ -322,8 +332,8 @@
 				</div>
 
 				<div class="col-md-3 col-lg-4 col-md-6 mb-4">
-					<div class="image-container">
-						<img src="img/gallery/education.jpg" alt="2021 Image">
+					<div class="img-fluid image-container">
+						<img src="img/gallery/education.jpg" alt="2021 Image" loading="lazy">
 						<div class="overlay">
 							<div class="text-center">
 								<h3 class="text-white"><strong>INNOVATION</strong></h3>
@@ -336,8 +346,8 @@
 				</div>
 
 				<div class="col-md-3 col-lg-4 col-md-6 mb-4">
-					<div class="image-container">
-						<img src="img/gallery/education.jpg" alt="2022 Image">
+					<div class="img-fluid image-container">
+						<img src="img/gallery/education.jpg" alt="2022 Image" loading="lazy">
 						<div class="overlay">
 							<div class="text-center">
 								<h3 class="text-white"><strong>FOOD PROGRAM</strong></h3>
@@ -368,8 +378,8 @@
 					</p>
 					<a href="#" class="primary_btn mt-3 mr-20">Read More</a>
 				</div>
-				<div class="col-md-6 mb-5 image-container">
-					<img src="img/gallery/education.jpg" alt="2022 Image">
+				<div class="col-md-6 image-container mb-5 ">
+					<img src="img/gallery/education.jpg" alt="2022 Image" width="400" height="300" loading="lazy">
 				</div>
 			</div>
 		</div>
@@ -384,7 +394,7 @@
 				<div class="single_about row">
 					<div class="col-lg-6 col-md-12 text-center about_left">
 						<div class="about_thumb image-container">
-							<img src="img/about-img.png" class="img-fluid" alt="">
+							<img src="img/about-img.png" class="img-fluid" width="400" height="300" loading="lazy" alt="">
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12 about_right">
@@ -413,515 +423,6 @@
 	</section>
 	<!--================ End About Us Area =================-->
 
-	<!--================ Start Features Cause section =================-->
-	<!-- <section class="features_causes">
-		<div class="container">
-			<div class="main_title">
-				<h2>Featured causes</h2>
-				<p>Creepeth called face upon face yielding midst is after moveth </p>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<figure>
-								<img class="card-img-top img-fluid" src="img/features/fc1.jpg" alt="Card image cap">
-							</figure>
-							<div class="card_inner_body">
-								<h4 class="card-title">Education for every child</h4>
-								<p class="card-text">
-									Be tree their face won't appear day waters moved fourth in they're divide don't a you were man face
-									god.
-								</p>
-								<div class="d-flex justify-content-between raised_goal">
-									<p>Raised: $1533</p>
-									<p><span>Goal: $2500</span></p>
-								</div>
-								<div class="d-flex justify-content-between donation align-items-center">
-									<a href="#" class="primary_btn">donate</a>
-									<p><span class="lnr lnr-heart"></span> 90 Donors</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<figure>
-								<img class="card-img-top img-fluid" src="img/features/fc2.jpg" alt="Card image cap">
-							</figure>
-							<div class="card_inner_body">
-								<h4 class="card-title">Feeding the hungry people</h4>
-								<p class="card-text">
-									Be tree their face won't appear day waters moved fourth in they're divide don't a you were man face
-									god.
-								</p>
-								<div class="d-flex justify-content-between raised_goal">
-									<p>Raised: $1533</p>
-									<p><span>Goal: $2500</span></p>
-								</div>
-								<div class="d-flex justify-content-between donation align-items-center">
-									<a href="#" class="primary_btn">donate</a>
-									<p><span class="lnr lnr-heart"></span> 90 Donors</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<figure>
-								<img class="card-img-top img-fluid" src="img/features/fc3.jpg" alt="Card image cap">
-							</figure>
-							<div class="card_inner_body">
-								<h4 class="card-title">Providing cloth people</h4>
-								<p class="card-text">
-									Be tree their face won't appear day waters moved fourth in they're divide don't a you were man face
-									god.
-								</p>
-								<div class="d-flex justify-content-between raised_goal">
-									<p>Raised: $1533</p>
-									<p><span>Goal: $2500</span></p>
-								</div>
-								<div class="d-flex justify-content-between donation align-items-center">
-									<a href="#" class="primary_btn">donate</a>
-									<p><span class="lnr lnr-heart"></span> 90 Donors</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!--================ End Features Cause section =================-->
-
-	<!--================ Start Recent Event Area =================-->
-	<!-- <section class="event_area section_gap_custom">
-		<div class="container">
-			<div class="main_title">
-				<h2>Upcoming events</h2>
-				<p>Creepeth called face upon face yielding midst is after moveth </p>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="single_event">
-						<div class="row align-items-center">
-							<div class="col-lg-6 col-md-6">
-								<figure>
-									<img class="img-fluid w-100" src="img/event/e1.jpg" alt="">
-									<div class="img-overlay"></div>
-								</figure>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="content_wrapper">
-									<h3 class="title">
-										<a href="event-details.html">Working syrian childreen</a>
-									</h3>
-									<p>
-										Be tree their face won't appear day to waters moved fourth in they're divide don't a you're were
-										man.
-									</p>
-									<div class="d-flex count_time" id="clockdiv1">
-										<div class="mr-25">
-											<h4 class="days">552</h4>
-											<p>Days</p>
-										</div>
-										<div class="mr-25">
-											<h4 class="hours">08</h4>
-											<p>Hours</p>
-										</div>
-										<div class="mr-25">
-											<h4 class="minutes">45</h4>
-											<p>Minutes</p>
-										</div>
-										<div>
-											<h4 class="seconds">30</h4>
-											<p>Seconds</p>
-										</div>
-									</div>
-									<a href="#" class="primary_btn">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-6">
-					<div class="single_event">
-						<div class="row align-items-center">
-							<div class="col-lg-6 col-md-6">
-								<figure>
-									<img class="img-fluid w-100" src="img/event/e2.jpg" alt="">
-									<div class="img-overlay"></div>
-								</figure>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="content_wrapper">
-									<h3 class="title">
-										<a href="event-details.html">Help and homelesness</a>
-									</h3>
-									<p>
-										Be tree their face won't appear day to waters moved fourth in they're divide don't a you're were
-										man.
-									</p>
-									<div class="d-flex count_time" id="clockdiv2">
-										<div class="mr-25">
-											<h4 class="days">552</h4>
-											<p>Days</p>
-										</div>
-										<div class="mr-25">
-											<h4 class="hours">08</h4>
-											<p>Hours</p>
-										</div>
-										<div class="mr-25">
-											<h4 class="minutes">45</h4>
-											<p>Minutes</p>
-										</div>
-										<div>
-											<h4 class="seconds">30</h4>
-											<p>Seconds</p>
-										</div>
-									</div>
-									<a href="#" class="primary_btn">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-6">
-					<div class="single_event">
-						<div class="row align-items-center">
-							<div class="col-lg-6 col-md-6">
-								<figure>
-									<img class="img-fluid w-100" src="img/event/e3.jpg" alt="">
-									<div class="img-overlay"></div>
-								</figure>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="content_wrapper">
-									<h3 class="title">
-										<a href="event-details.html">Save the clean water</a>
-									</h3>
-									<p>
-										Be tree their face won't appear day to waters moved fourth in they're divide don't a you're were
-										man.
-									</p>
-									<div class="d-flex count_time" id="clockdiv3">
-										<div class="mr-25">
-											<h4 class="days">552</h4>
-											<p>Days</p>
-										</div>
-										<div class="mr-25">
-											<h4 class="hours">08</h4>
-											<p>Hours</p>
-										</div>
-										<div class="mr-25">
-											<h4 class="minutes">45</h4>
-											<p>Minutes</p>
-										</div>
-										<div>
-											<h4 class="seconds">30</h4>
-											<p>Seconds</p>
-										</div>
-									</div>
-									<a href="#" class="primary_btn">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-6">
-					<div class="single_event">
-						<div class="row align-items-center">
-							<div class="col-lg-6 col-md-6">
-								<figure>
-									<img class="img-fluid w-100" src="img/event/e4.jpg" alt="">
-									<div class="img-overlay"></div>
-								</figure>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="content_wrapper">
-									<h3 class="title">
-										<a href="event-details.html">Foods for poor childreen</a>
-									</h3>
-									<p>
-										Be tree their face won't appear day to waters moved fourth in they're divide don't a you're were
-										man.
-									</p>
-									<div class="d-flex count_time" id="clockdiv4">
-										<div class="mr-25">
-											<h4 class="days">552</h4>
-											<p>Days</p>
-										</div>
-										<div class="mr-25">
-											<h4 class="hours">08</h4>
-											<p>Hours</p>
-										</div>
-										<div class="mr-25">
-											<h4 class="minutes">45</h4>
-											<p>Minutes</p>
-										</div>
-										<div>
-											<h4 class="seconds">30</h4>
-											<p>Seconds</p>
-										</div>
-									</div>
-									<a href="#" class="primary_btn">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!--================ End Recent Event Area =================-->
-
-	<!--================Team Area =================-->
-	<!-- <section class="team_area section_gap">
-		<div class="container">
-			<div class="main_title">
-				<h2>Meet our voluteer</h2>
-				<p>Creepeth called face upon face yielding midst is after moveth </p>
-			</div>
-			<div class="row team_inner">
-				<div class="col-lg-3 col-md-6">
-					<div class="team_item">
-						<div class="team_img">
-							<img class="img-fluid" src="img/voluteer/v1.jpg" alt="">
-						</div>
-						<div class="team_name">
-							<h4>Alea Mirslava</h4>
-							<p>Party Manager</p>
-							<p class="mt-20">
-								So seed seed green that winged cattle in kath moved us land years living.
-							</p>
-							<div class="social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="active"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa-envelope-o"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6">
-					<div class="team_item">
-						<div class="team_img">
-							<img class="img-fluid" src="img/voluteer/v2.jpg" alt="">
-						</div>
-						<div class="team_name">
-							<h4>Adam Virland</h4>
-							<p>Party Manager</p>
-							<p class="mt-20">
-								So seed seed green that winged cattle in kath moved us land years living.
-							</p>
-							<div class="social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="active"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa-envelope-o"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6">
-					<div class="team_item">
-						<div class="team_img">
-							<img class="img-fluid" src="img/voluteer/v3.jpg" alt="">
-						</div>
-						<div class="team_name">
-							<h4>Adam Virland</h4>
-							<p>Party Manager</p>
-							<p class="mt-20">
-								So seed seed green that winged cattle in kath moved us land years living.
-							</p>
-							<div class="social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="active"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa-envelope-o"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6">
-					<div class="team_item">
-						<div class="team_img">
-							<img class="img-fluid" src="img/voluteer/v4.jpg" alt="">
-						</div>
-						<div class="team_name">
-							<h4>Adam Virland</h4>
-							<p>Party Manager</p>
-							<p class="mt-20">
-								So seed seed green that winged cattle in kath moved us land years living.
-							</p>
-							<div class="social">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="active"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-instagram"></i></a>
-								<a href="#"><i class="fa fa-envelope-o"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!--================End Team Area =================-->
-
-	<!--================ Start CTA Area =================-->
-	<!-- <div class="cta-area section_gap overlay">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-7">
-					<h1>Become a volunteer</h1>
-					<p>
-						So seed seed green that winged cattle in. Gathering thing made fly you're
-						divided deep leave on the medicene moved us land years living.
-					</p>
-					<a href="#" class="primary_btn yellow_btn rounded">join with us</a>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<!--================ End CTA Area =================-->
-
-	<!--================ Start Story Area =================-->
-	<!-- <section class="section_gap story_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-7">
-					<div class="main_title">
-						<h2>Our latest Story</h2>
-						<p>
-							Open lesser winged midst wherein may morning
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row"> -->
-	<!-- single-story -->
-	<!-- <div class="col-lg-4 col-md-6">
-					<div class="single-story">
-						<div class="story-thumb">
-							<img class="img-fluid" src="img/story/s1.jpg" alt="">
-						</div>
-						<div class="story-details">
-							<div class="story-meta">
-								<a href="#">
-									<span class="lnr lnr-calendar-full"></span>
-									20th Sep, 2018
-								</a>
-								<a href="#">
-									<span class="lnr lnr-book"></span>
-									Company
-								</a>
-							</div>
-							<h5>
-								<a href="#">
-									Lime recalls electric scooters over
-									battery fire.
-								</a>
-							</h5>
-						</div>
-					</div>
-				</div> -->
-
-	<!-- single-story -->
-	<!-- <div class="col-lg-4 col-md-6">
-					<div class="single-story">
-						<div class="story-thumb">
-							<img class="img-fluid" src="img/story/s2.jpg" alt="">
-						</div>
-						<div class="story-details">
-							<div class="story-meta">
-								<a href="#">
-									<span class="lnr lnr-calendar-full"></span>
-									20th Sep, 2018
-								</a>
-								<a href="#">
-									<span class="lnr lnr-book"></span>
-									Company
-								</a>
-							</div>
-							<h5>
-								<a href="#">
-									Apple resorts to promo deals
-									trade to boost
-								</a>
-							</h5>
-						</div>
-					</div>
-				</div> -->
-
-	<!-- single-story -->
-	<!-- <div class="col-lg-4 col-md-6">
-					<div class="single-story">
-						<div class="story-thumb">
-							<img class="img-fluid" src="img/story/s3.jpg" alt="">
-						</div>
-						<div class="story-details">
-							<div class="story-meta">
-								<a href="#">
-									<span class="lnr lnr-calendar-full"></span>
-									20th Sep, 2018
-								</a>
-								<a href="#">
-									<span class="lnr lnr-book"></span>
-									Company
-								</a>
-							</div>
-							<h5>
-								<a href="#">
-									Lime recalls electric scooters over
-									battery fire.
-								</a>
-							</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!--================ End Story Area =================-->
-
-	<!--================ Start Subscribe Area =================-->
-	<!-- <div class="container">
-		<div class="subscribe_area">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="d-flex align-items-center">
-						<h1 class="text-white">Do you have a question?</h1>
-						<div id="mc_embed_signup">
-							<form target="_blank"
-								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-								method="get" class="subscribe_form relative">
-								<div class="input-group d-flex flex-row">
-									<input name="EMAIL" placeholder="Your email address" onfocus="this.placeholder = ''"
-										onblur="this.placeholder = 'Email Address '" required="" type="email">
-									<button class="ml-10 primary_btn yellow_btn btn sub-btn rounded">SUBSCRIBE</button>
-								</div>
-								<div class="info"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<!--================ End Subscribe Area =================-->
-
 	<!--================ Start footer Area  =================-->
 	<footer>
 		<div class="footer-area section-top-border">
@@ -931,7 +432,7 @@
 							alt=""></a>
 					<div class="col-lg-3 col-md-6 col-sm-6">
 						<div class="single-footer-widget tp_widgets">
-							<h4 class="footer_title large_title">Our Mission</h4>
+							<h2 class="footer_title large_title">Our Mission</h2>
 							<p>
 								To promote Inclusive social-economic empowerment and right-based participation of the
 								most vulnerable
@@ -946,12 +447,12 @@
 						<div class="single-footer-widget tp_widgets">
 							<h4 class="footer_title">Quick Links</h4>
 							<ul class="list">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Programs</a></li>
-								<li><a href="#">Work</a></li>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about-us.html">About</a></li>
+								<li><a href="/programs/education.html">Programs</a></li>
+								<li><a href="/impacts/success-stories.html">Impacts</a></li>
 								<li><a href="#">News & Events</a></li>
-								<li><a href="#">Contact Us</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
 						</div>
 					</div>
@@ -962,19 +463,27 @@
 							<div class="ml-40">
 								<p class="sm-head">
 									<span class="fa fa-location-arrow"></span>
-									Head Office
+									SOUTH SUDAN OFFICE
 								</p>
-								<p>Juba Head Office,
-									Opposite Zain Main Office, Gudele Road,
-									Juba, South Sudan</p>
+								<p>
+									Thongping, Scenius Hub Next to Winners Chapel.
+								</p>
+
+								<p class="sm-head">
+									<span class="fa fa-location-arrow"></span>
+									KENYA OFFICE
+								</p>
+								<p>
+									Shalom House, St.Daniel Comboni Road Off Ngong Road.
+								</p>
 
 								<p class="sm-head">
 									<span class="fa fa-phone"></span>
 									Phone Number
 								</p>
 								<p>
-									+211929975708 <br>
-									+211911283169
+									+211 929 975 708 <br>
+									+254 702 676 918
 								</p>
 
 								<p class="sm-head">
@@ -996,8 +505,7 @@
 				<div class="row d-flex">
 					<p class="col-lg-12 footer-text text-center">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | Sunrays Foundation
+						Copyright © <span id="currentYear"></span> All rights reserved | Sunrays Foundation
 						<i class="fa fa-heart-o" aria-hidden="true"></i>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
@@ -1013,32 +521,36 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			document.getElementById('currentYear').textContent = new Date().getFullYear();
+		</script>
 	</footer>
+
 	<!--================ End footer Area  =================-->
 
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="js/countdown.js"></script>
+	<script defer src="js/jquery-3.2.1.min.js"></script>
+	<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script defer src="js/popper.js"></script>
+	<script defer src="js/bootstrap.min.js"></script>
+	<script defer src="js/stellar.js"></script>
+	<script defer src="vendors/lightbox/simpleLightbox.min.js"></script>
+	<script defer src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script defer src="js/jquery.ajaxchimp.min.js"></script>
+	<script defer src="js/mail-script.js"></script>
+	<script defer src="js/countdown.js"></script>
 	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
-	<script src="js/programs.js"></script>
-	<script src="js/slider.js"></script>
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script defer src="js/gmaps.min.js"></script>
+	<script defer src="js/theme.js"></script>
+	<script defer src="js/programs.js"></script>
+	<script defer src="js/slider.js"></script>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

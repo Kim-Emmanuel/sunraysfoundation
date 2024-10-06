@@ -7,16 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="icon" href="/img/logo.png" type="image/png" />
   <title>Uganda</title>
+  <meta name="description" content="Sun Rays Foundation our office location in Uganda.">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.css" />
-  <link rel="stylesheet" href="/vendors/linericon/style.css" />
-  <link rel="stylesheet" href="/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css" />
-  <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css" />
+  <link rel="preload" href="/css/style.css" as="style" />
+  <link rel="preload" href="/css/responsive.css" as="style" />
+  <link rel="preload" href="/css/bootstrap.css" as="style" />
+  <link rel="preload" as="style" href="/vendors/linericon/style.css">
+  <link rel="preload" as="style" href="/vendors/lightbox/simpleLightbox.css">
+  <link rel="preload" as="style" href="/vendors/nice-select/css/nice-select.css">
+
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/vendors/linericon/style.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css">
+  <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
   <!-- main css -->
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/responsive.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style" />
+  <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
@@ -181,7 +190,7 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url('/img/banner/home-banner.png')">
+        <div class="carousel-item active" style="background-image: url('/img/banner/home-banner.png')" loading="lazy">
           <div class="container">
             <div class="carousel-caption">
               <p class="upper_text">Give a hand</p>
@@ -195,7 +204,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url('/img/gallery/education.jpg')">
+        <div class="carousel-item" style="background-image: url('/img/gallery/education.jpg')" loading="lazy">
           <div class="container">
             <div class="carousel-caption">
               <p class="upper_text">Empowering Futures</p>
@@ -209,7 +218,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url('/img/about-img.png')">
+        <div class="carousel-item" style="background-image: url('/img/about-img.png')" loading="lazy">
           <div class="container">
             <div class="carousel-caption">
               <p class="upper_text">Health for All</p>
@@ -295,7 +304,7 @@
               <h3 class="mb-30 title_color">Communities</h3>
               <div class="row">
                 <div class="col-md-3 image-container">
-                  <img src="/img/gallery/education.jpg" alt="" class="img-fluid">
+                  <img src="/img/gallery/education.jpg" alt="" class="img-fluid" loading="lazy">
                 </div>
                 <div class="col-md-9 mt-sm-20 left-align-p">
                   <p>Economically Empowered communities free from hunger,poverty, violence and embracing peaceful
@@ -356,7 +365,8 @@
       <div class="text-center mb-4">
         <div class="col-md-6 mx-auto">
           <p class="lead font-weight-bold">Section Under construction...</p>
-          <img src="/img/under-construction.svg" width="400" height="500" alt="under construction" class="img-fluid">
+          <img src="/img/under-construction.svg" width="400" height="500" alt="under construction" class="img-fluid"
+            loading="lazy">
         </div>
       </div>
     </div>
@@ -369,18 +379,17 @@
       <div class="container">
         <div class="row section_gap">
           <a class="navbar-brand logo_h" href="/index.html"><img src="/img/logo-01.svg" width="250" height="150"
-              alt="" /></a>
+              alt=""></a>
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="single-footer-widget tp_widgets">
-              <h4 class="footer_title large_title">Our Mission</h4>
+              <h2 class="footer_title large_title">Our Mission</h2>
               <p>
-                To promote Inclusive social-economic empowerment and right-based
-                participation of the most vulnerable and marginalized children, youth,
-                women, and people with disabilities for sustainable.
+                To promote Inclusive social-economic empowerment and right-based participation of the
+                most vulnerable
+                and marginalized children, youth, women, and people with disabilities for sustainable.
               </p>
               <p>
-                Transforming lives through compassion and action. Join Sun Rays
-                Foundation.
+                Transforming lives through compassion and action. Join Sun Rays Foundation.
               </p>
             </div>
           </div>
@@ -388,12 +397,12 @@
             <div class="single-footer-widget tp_widgets">
               <h4 class="footer_title">Quick Links</h4>
               <ul class="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Work</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about-us.html">About</a></li>
+                <li><a href="/programs/education.html">Programs</a></li>
+                <li><a href="/impacts/success-stories.html">Impacts</a></li>
                 <li><a href="#">News & Events</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -404,11 +413,18 @@
               <div class="ml-40">
                 <p class="sm-head">
                   <span class="fa fa-location-arrow"></span>
-                  Head Office
+                  SOUTH SUDAN OFFICE
                 </p>
                 <p>
-                  Juba Head Office, Opposite Zain Main Office, Gudele Road, Juba, South
-                  Sudan
+                  Thongping, Scenius Hub Next to Winners Chapel.
+                </p>
+
+                <p class="sm-head">
+                  <span class="fa fa-location-arrow"></span>
+                  KENYA OFFICE
+                </p>
+                <p>
+                  Shalom House, St.Daniel Comboni Road Off Ngong Road.
                 </p>
 
                 <p class="sm-head">
@@ -416,15 +432,17 @@
                   Phone Number
                 </p>
                 <p>
-                  +211929975708 <br />
-                  +211911283169
+                  +211 929 975 708 <br>
+                  +254 702 676 918
                 </p>
 
                 <p class="sm-head">
                   <span class="fa fa-envelope"></span>
                   Email
                 </p>
-                <p>info@sunraysfoundation.org <br /></p>
+                <p>
+                  info@sunraysfoundation.org <br>
+                </p>
               </div>
             </div>
           </div>
@@ -437,11 +455,7 @@
         <div class="row d-flex">
           <p class="col-lg-12 footer-text text-center">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | Sunrays Foundation
+            Copyright © <span id="currentYear"></span> All rights reserved | Sunrays Foundation
             <i class="fa fa-heart-o" aria-hidden="true"></i>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
@@ -457,28 +471,31 @@
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
   </footer>
   <!--================ End footer Area  =================-->
 
   <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="/js/jquery-3.2.1.min.js"></script>
-  <script src="/js/popper.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/stellar.js"></script>
-  <script src="/vendors/lightbox/simpleLightbox.min.js"></script>
-  <script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-  <script src="/js/jquery.ajaxchimp.min.js"></script>
-  <script src="/js/mail-script.js"></script>
-  <script src="/js/slider.js"></script>
-  <script src="/js/location.js"></script>
+  <!-- jQury first, then Popper.js, then Bootstrap JS -->
+  <script defer src="/js/jquery-3.2.1.min.js"></script>
+  <script defer src="/js/popper.js"></script>
+  <script defer src="/js/bootstrap.min.js"></script>
+  <script defer src="/js/stellar.js"></script>
+  <script defer src="/vendors/lightbox/simpleLightbox.min.js"></script>
+  <script defer src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script defer src="/js/jquery.ajaxchimp.min.js"></script>
+  <script defer src="/js/mail-script.js"></script>
+  <script defer src="/js/slider.js"></script>
+  <script defer src="/js/location.js"></script>
 
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  <script defer async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
   <!--gmaps Js-->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-  <script src="/js/gmaps.min.js"></script>
-  <script src="/js/theme.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script defer src="/js/gmaps.min.js"></script>
+  <script defer src="/js/theme.js"></script>
 </body>
 
 </html>

@@ -50,7 +50,7 @@ body {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #777777;
+  color: #333;
 }
 
 h1,
@@ -861,7 +861,7 @@ button:focus {
 }
 
 strong {
-  color: #93C740;
+  color: #D15C11;
 }
 
 @media (max-width: 991px) {
@@ -4104,8 +4104,14 @@ h6 {
 }
 
 .tp_widgets .list li a {
-  color: #777777;
+  color: #333;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
+}
+
+.tp_widgets .list li a:hover {
+  color: #93C740;
+  
 }
 
 .tp_widgets .list li:last-child {
@@ -4145,7 +4151,7 @@ h6 {
 }
 
 .footer-bottom .footer-text {
-  color: #fff;
+  color: #000;
   margin-bottom: 0;
 }
 
@@ -4161,7 +4167,7 @@ h6 {
 }
 
 .footer-top .footer-text {
-  color: #fff;
+  color: #000;
   margin-bottom: 0px;
 }
 
@@ -4177,7 +4183,7 @@ h6 {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
   /* White with 20% opacity */
-  color: white;
+  color: #000 !important;
   text-align: center;
   line-height: 36px;
   /* Vertically center content */
@@ -4186,7 +4192,7 @@ h6 {
 }
 
 .social-icon a:hover {
-  background-color: #333;
+  background-color: #fff;
   /* Turn white on hover */
   color: #4CAF50;
   /* Green color on hover */
