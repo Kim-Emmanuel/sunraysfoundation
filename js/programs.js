@@ -18,10 +18,23 @@ $(document).ready(function () {
   });
 
 
-  // For initial load (especially the homepage or a non-program page):
+
   if (!$('.program-button.active').length) {
-    $('.program-link[data-target="education"]').addClass('active');
-    $('#program-content').load('education.html #education'); //Default to education
-  }
+  $('.program-link[data-target="education"]').addClass('active');
+
+  $.ajax({
+    url: 'education.html',
+    dataType: 'html',
+    success: function(data) {
+      // Extract the content of the #education element from the loaded HTML
+      const educationContent = $(data).find('#education').html();
+      $('#program-content').html(educationContent); // Insert into the target element
+    },
+    error: function() {
+      // Handle errors if the AJAX request fails
+      console.error('Error loading education.html');
+    }
+  });
+}
 
 });

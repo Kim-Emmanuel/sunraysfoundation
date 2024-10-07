@@ -196,12 +196,12 @@ button:focus {
   display: inline-block;
   background: #93C740;
   padding: 0px 50px;
-  color: #fff;
+  color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 48px;
-  border: 1px solid #93C740;
+  border: 1.5px solid #93C740;
   border-radius: 3px;
   outline: none !important;
   box-shadow: none !important;
@@ -218,14 +218,15 @@ button:focus {
 
 .primary_btn.yellow_btn {
   background: #E58824 !important;
-  border: 1px solid #E58824 !important;
-  color: #000000;
+  border: 1.5px solid #E58824 !important;
+  color: #000000 !important;
   border-radius: 3px;
   padding: 0px 30px;
 }
 
 .primary_btn.yellow_btn:hover {
   background: transparent !important;
+  color: #E58824 !important;
 }
 
 /*---------------------------------------------------- */
@@ -401,7 +402,16 @@ button:focus {
   }
 } */
 
+.donate-button-container { /* New container element */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  padding: 10px; /* Adjust for spacing around button */
+  display: inline-block; /* To control container size */
+}
 
+.donate-button-container .primary_btn { /* Target button within container */
+  background-color: #ff9900; /* Example - adjust to your desired orange */
+  color: white;
+} 
 /* Reset to default positioning on extra large screens and above */
 /* @media (min-width: 992px) { */
 
@@ -860,9 +870,9 @@ button:focus {
   padding: 130px 0px 70px;
 }
 
-strong {
-  color: #D15C11;
-}
+/* strong {
+  color: #913A04;
+} */
 
 @media (max-width: 991px) {
   .who_area {
@@ -4081,7 +4091,7 @@ h6 {
 }
 
 .single-footer-widget .sm-head {
-  color: #93C740;
+  color: #335300;
   margin-bottom: 0px;
 }
 
@@ -4094,7 +4104,7 @@ h6 {
   height: 28px;
   line-height: 28px;
   text-align: center;
-  background: #93C740;
+  background: #335300;
   color: #ffffff;
   border-radius: 20px;
 }
@@ -4191,6 +4201,8 @@ h6 {
   /* Spacing between icons */
 }
 
+
+
 .social-icon a:hover {
   background-color: #fff;
   /* Turn white on hover */
@@ -4200,6 +4212,18 @@ h6 {
 
 .social-icon i {
   font-size: 18px;
+}
+
+.visually-hidden { 
+  position: absolute; /* Take it out of the visual flow */
+  width: 1px; 
+  height: 1px; 
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap; /* Keep text from wrapping */
+  border: 0; 
 }
 
 /* Start Our location  */
@@ -4243,5 +4267,34 @@ h6 {
   z-index: -1;
   /* Place the overlay behind the text */
 }
+
+.youtube-embed iframe {
+    display: none; /* Hide iframe initially */
+}
+.youtube-embed.loaded iframe {
+    display: block; 
+}
+
+/* Style the facade container */
+.youtube-embed {
+  position: relative; /* To position play button */
+}
+
+/* Style the facade image */
+.lazy-load-facade {
+  display: block; /* Or inline-block if needed */
+  width: 100%; 
+  height: auto; 
+}
+
+/* Style the play button (optional) */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Add your play button styles here */ 
+}
+
 
 /*# sourceMappingURL=style.css.map */
