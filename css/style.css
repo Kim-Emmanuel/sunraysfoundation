@@ -2875,7 +2875,7 @@ button:focus {
 
 .section-top-border {
   padding: 50px 0;
-  border-top: 1px dotted #eee;
+  border-top: 1px solid rgba(223,223,215, 1) !important;
 }
 
 .switch-wrap {
@@ -4091,8 +4091,9 @@ h6 {
 }
 
 .single-footer-widget .sm-head {
-  color: #335300;
+  color: #333;
   margin-bottom: 0px;
+  font-weight: 600;
 }
 
 .single-footer-widget .sm-head span {
@@ -4208,6 +4209,16 @@ h6 {
   /* Turn white on hover */
   color: #4CAF50;
   /* Green color on hover */
+animation: bounce 0.5s; /* Apply the bounce animation */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Adjust bounce height */
+  }
 }
 
 .social-icon i {
