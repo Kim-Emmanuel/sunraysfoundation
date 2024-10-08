@@ -1,6 +1,6 @@
 function initMap() {
   // Initialize maps for each country (replace with your own coordinates)
-  initCountryMap('map-south-sudan', -1.2921, 36.8219);
+  initCountryMap('map-south-sudan', 4.868036817560153, 31.591447766211918);
   initCountryMap('map-kenya', -1.2921, 36.8219);
   initCountryMap('map-uganda', 1.3733, 32.2903);
   initCountryMap('map-lesotho', -29.6099, 28.2336);
