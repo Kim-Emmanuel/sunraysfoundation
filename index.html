@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style" />
 	<link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -239,7 +240,7 @@
 
 	<!--================ Start Who we are Area =================-->
 	<section class="who_area">
-		<div class="container">
+		<div class="container" data-aos="fade-up">
 			<div class="row">
 				<div class="col-md-12 text-center mb-5">
 					<h1 class="upper_text">WHO WE ARE</h1>
@@ -279,7 +280,7 @@
 				<p class="text-white">Creepeth called face upon face yielding midst is after moveth </p>
 			</div>
 
-			<div class="mb-5">
+			<div class="mb-5" data-aos="fade-right">
 				<h2 class="mb-30 text-white">Vision</h2>
 				<div class="row">
 					<div class="col-md-3 image-container">
@@ -291,7 +292,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="section-top-border text-right">
+			<div class=" text-right" data-aos="fade-left">
 				<h2 class="mb-30 text-white">Mission</h2>
 				<div class="row">
 					<div class="col-md-9">
@@ -313,12 +314,12 @@
 	<!--================ Start Our History Area =================-->
 	<section class="our_history_area" id="history">
 		<div class="container">
-			<div class="main_title">
+			<div class="main_title" data-aos="fade-down" data-aos-duration="600">
 				<h2>Our History</h2>
 				<p>Creepeth called face upon face yielding midst is after moveth </p>
 			</div>
-			<div class="row">
-
+		
+			<div class="row" data-aos="fade-up" data-aos-delay="100">
 				<div class="col-md-3 col-lg-4 col-md-6 mb-4">
 					<div class="img-fluid image-container">
 						<img src="img/gallery/education.jpg" alt="2019 Image" loading="lazy">
@@ -385,7 +386,7 @@
 	<section class="who_area jumbotron jumbotron-fluid position-relative">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 mb-5">
+				<div class="col-md-6 mb-5" data-aos="fade-right">
 					<h2 class="text-white">OUR STORIES FROM THE FIELD.</h2>
 					<p class="text-white">
 						<strong>Sunrays Foundation(SRF)</strong>, is a Humanitarian non-profit organization established in 2019 by a
@@ -395,7 +396,7 @@
 					</p>
 					<a href="#" class="primary_btn mt-3 mr-20">Read More</a>
 				</div>
-				<div class="col-md-6 image-container mb-5 ">
+				<div class="col-md-6 image-container mb-5" data-aos="zoom-in-left">
 					<img src="img/gallery/education.jpg" alt="2022 Image" width="400" height="300" loading="lazy">
 				</div>
 			</div>
@@ -409,12 +410,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="single_about row">
-					<div class="col-lg-6 col-md-12 text-center about_left">
+					<div class="col-lg-6 col-md-12 text-center about_left" data-aos="fade-down-right">
 						<div class="about_thumb image-container">
 							<img src="img/about-img.png" class="img-fluid" width="400" height="300" loading="lazy" alt="">
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-12 about_right">
+					<div class="col-lg-6 col-md-12 about_right" data-aos="fade-up-left">
 						<div class="about_content">
 							<h2>
 								We are nonprofit team <br>
@@ -571,6 +572,8 @@
 	<script defer src="js/gmaps.min.js"></script>
 	<script defer src="js/theme.js"></script>
 	<script defer src="js/slider.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="js/aos-animations.js"></script>
 
 	<script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script defer type="nomodule" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
