@@ -4515,7 +4515,7 @@ input[type=submit].btn-block {
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, .5);
+    color;
     border-color: rgba(0, 0, 0, .1)
 }
 
