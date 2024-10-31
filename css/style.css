@@ -402,16 +402,23 @@ button:focus {
   }
 } */
 
-.donate-button-container { /* New container element */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  padding: 10px; /* Adjust for spacing around button */
-  display: inline-block; /* To control container size */
+.donate-button-container {
+  /* New container element */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black overlay */
+  padding: 10px;
+  /* Adjust for spacing around button */
+  display: inline-block;
+  /* To control container size */
 }
 
-.donate-button-container .primary_btn { /* Target button within container */
-  background-color: #ff9900; /* Example - adjust to your desired orange */
+.donate-button-container .primary_btn {
+  /* Target button within container */
+  background-color: #ff9900;
+  /* Example - adjust to your desired orange */
   color: white;
-} 
+}
+
 /* Reset to default positioning on extra large screens and above */
 /* @media (min-width: 992px) { */
 
@@ -2875,7 +2882,7 @@ button:focus {
 
 .section-top-border {
   padding: 50px 0;
-  border-top: 1px solid rgba(223,223,215, 1) !important;
+  border-top: 1px solid rgba(223, 223, 215, 1) !important;
 }
 
 .switch-wrap {
@@ -4122,7 +4129,7 @@ h6 {
 
 .tp_widgets .list li a:hover {
   color: #93C740;
-  
+
 }
 
 .tp_widgets .list li:last-child {
@@ -4209,15 +4216,20 @@ h6 {
   /* Turn white on hover */
   color: #4CAF50;
   /* Green color on hover */
-animation: bounce 0.5s; /* Apply the bounce animation */
+  animation: bounce 0.5s;
+  /* Apply the bounce animation */
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
-    transform: translateY(-5px); /* Adjust bounce height */
+    transform: translateY(-5px);
+    /* Adjust bounce height */
   }
 }
 
@@ -4225,16 +4237,18 @@ animation: bounce 0.5s; /* Apply the bounce animation */
   font-size: 18px;
 }
 
-.visually-hidden { 
-  position: absolute; /* Take it out of the visual flow */
-  width: 1px; 
-  height: 1px; 
+.visually-hidden {
+  position: absolute;
+  /* Take it out of the visual flow */
+  width: 1px;
+  height: 1px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  white-space: nowrap; /* Keep text from wrapping */
-  border: 0; 
+  white-space: nowrap;
+  /* Keep text from wrapping */
+  border: 0;
 }
 
 /* Start Our location  */
@@ -4258,9 +4272,12 @@ animation: bounce 0.5s; /* Apply the bounce animation */
 }
 
 .country-flag {
-  width: auto; /* Choose a suitable width */
-  height: 170px; /* Choose a suitable height */
-  object-fit: cover; /* Maintain aspect ratio, may crop some parts */
+  width: auto;
+  /* Choose a suitable width */
+  height: 170px;
+  /* Choose a suitable height */
+  object-fit: cover;
+  /* Maintain aspect ratio, may crop some parts */
 }
 
 /* End Our location  */
@@ -4280,22 +4297,26 @@ animation: bounce 0.5s; /* Apply the bounce animation */
 }
 
 .youtube-embed iframe {
-    display: none; /* Hide iframe initially */
+  display: none;
+  /* Hide iframe initially */
 }
+
 .youtube-embed.loaded iframe {
-    display: block; 
+  display: block;
 }
 
 /* Style the facade container */
 .youtube-embed {
-  position: relative; /* To position play button */
+  position: relative;
+  /* To position play button */
 }
 
 /* Style the facade image */
 .lazy-load-facade {
-  display: block; /* Or inline-block if needed */
-  width: 100%; 
-  height: auto; 
+  display: block;
+  /* Or inline-block if needed */
+  width: 100%;
+  height: auto;
 }
 
 /* Style the play button (optional) */
@@ -4304,8 +4325,117 @@ animation: bounce 0.5s; /* Apply the bounce animation */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* Add your play button styles here */ 
+  /* Add your play button styles here */
 }
 
+/* Style shapes */
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.shape {
+  width: 412px;
+  height: 240px;
+  padding: 50px;
+  /* Reduced padding */
+  background-color: #93C740;
+
+  overflow: hidden;
+  position: relative;
+  /* To contain the pseudo-element */
+}
+
+.shape.left {
+  border-radius: 0 50px 0 50px;
+  /* Reverse rounded corners */
+  transform: translateX(50px);
+  /* Initial position off-screen (opposite direction)*/
+}
+
+.shape.right {
+  border-radius: 50px 0 50px 0;
+  /* Reverse rounded corners */
+  transform: translateX(50px);
+  /* Initial position off-screen (opposite direction)*/
+}
+
+.shape h2,
+.shape p {
+  text-align: center;
+  /* Center the text */
+}
+
+.shape-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Place SVG behind content */
+}
+
+/* Pseudo-element for the triangle */
+.shape::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  /* Place behind content */
+}
+
+.shape.left::before {
+  left: 0;
+  border-style: solid;
+  border-width: 135px 100px 0 0;
+  /* Adjust these values to control the triangle's shape */
+  border-color: #93C740 transparent transparent transparent;
+}
+
+.shape.right::before {
+  right: 0;
+  border-style: solid;
+  border-width: 0 0 135px 100px;
+  border-color: transparent transparent #93C740 transparent;
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* Bootstrap breakpoint */
+  .shape {
+    width: 100%;
+    border-radius: 50px;
+    /* Standard border radius */
+  }
+
+  .shape.left,
+  .shape.right {
+    border-radius: 50px;
+    /* Consistent border radius */
+
+  }
+
+  /* Adjust triangle position for smaller screens */
+  .shape.left::before,
+  .shape.right::before {
+    border-width: 135px 175px 0 0;
+    /* Equal sides for centered triangle */
+  }
+
+  .shape.right::before {
+    border-width: 0 0 135px 175px;
+  }
+
+
+}
 
 /*# sourceMappingURL=style.css.map */
