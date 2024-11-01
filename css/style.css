@@ -4437,5 +4437,143 @@ h6 {
 
 
 }
+ /* Bento Grid style */
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  /* Add padding to prevent content from touching edges */
+  box-sizing: border-box;
+  /* Include padding in element's total width and height */
+}
 
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns */
+  grid-gap: 10px;
+  width: 90%;
+  /* Occupy most of the container width */
+  max-width: 1200px;
+  /* Set a maximum width */
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  /* Add transition for image hover effect */
+  display: block;
+  /* Prevent small gap below image */
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+  /* Image scales on hover */
+}
+
+/* Style for the "View" link */
+.view-link {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent black background */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.3s ease;
+  /* Smooth transition for opacity */
+  z-index: 2;
+  /* Ensure it's above the image */
+  pointer-events: auto;
+  /* Make the link clickable even if the image is scaled up */
+}
+
+.grid-item:hover .view-link {
+  opacity: 1;
+}
+
+/* Example of setting different sizes for items. Modify as needed */
+.item-1 {
+  grid-column: 1 / span 2;
+  /* Span two columns */
+  grid-row: 1 / span 2;
+  /* Span two rows */
+}
+
+/* Optional: Responsive adjustments. Example for smaller screens */
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on smaller screens */
+  }
+
+  .item-1 {
+    grid-column: 1 / span 2;
+    /* Span all columns on smaller screens */
+    grid-row: auto;
+    /* Reset row span on smaller screens */
+  }
+}
+
+.header-area {
+  /* Style the heading area */
+  margin-bottom: 20px;
+  /* Space between heading and grid */
+
+}
+
+.header-area h1 {
+  font-size: 2em;
+  /* Example heading size */
+
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  /* Occupy full container width */
+
+
+}
+
+
+/* ... other styles (grid-item, view-link, image-viewer) ... */
+
+
+
+/* Optional: Responsive adjustments (If you want a different layout on small screens) */
+@media (max-width: 768px) {
+
+  /* Adjust breakpoint as needed */
+  .container {
+    align-items: center;
+    /* Center heading and grid on small screens */
+
+  }
+
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
 /*# sourceMappingURL=style.css.map */
