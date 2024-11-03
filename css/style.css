@@ -4444,7 +4444,6 @@ h6 {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f0f0;
   padding: 20px;
   /* Add padding to prevent content from touching edges */
   box-sizing: border-box;
@@ -4542,8 +4541,8 @@ h6 {
 }
 
 .item-13 {
-  grid-column: 1/ span 4;
-  grid-row: 7/ span 1;
+  grid-column: 1/ span 2;
+  grid-row: 7/ span 2;
 }
 
 /* and so on... */
