@@ -817,44 +817,41 @@ button:focus {
 /* Start Our History Area css
 ============================================================================================ */
 .image-container {
-  position: relative;
-  overflow: hidden;
-  /* Ensure overlay stays within container */
+  width: 100%; /* Or a specific width if you need a fixed-width gallery */
+  aspect-ratio: 16 / 9; /* Example: 16:9 aspect ratio. Adjust as needed. */
+  position: relative; /* For positioning the overlay */
+  overflow: hidden; /* Hide overflowing image content */
 }
 
 .image-container img {
   width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-  /* Add a smooth transition effect */
+  height: 100%;
+  object-fit: cover; /* Cover the entire container, cropping if necessary */
+  transition: transform 0.3s ease; /* Smooth image transform on hover */
+  display: block;  /* Prevents a small gap at the bottom in some cases */
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0; /* Shorthand for top: 0; right: 0; bottom: 0; left: 0; */
   background-color: rgba(0, 0, 0, 0.7);
-  /* Semi-transparent black overlay */
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  /* Hide overlay by default */
   transition: opacity 0.3s ease;
-  /* Add a smooth transition effect */
+  pointer-events: none; /* Prevent overlay from interfering with image hover */
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+  pointer-events: auto; /* Allow interaction with the overlay on hover */
 }
 
 .image-container:hover img {
   transform: scale(1.1);
   /* Zoom effect on hover */
-}
-
-.image-container:hover .overlay {
-  opacity: 1;
-  /* Show overlay on hover */
 }
 
 .our_history_area {
@@ -881,11 +878,18 @@ button:focus {
   color: #913A04;
 } */
 
+.fa-heart-o
+{
+  color: #E21C1C;
+}
+
 @media (max-width: 991px) {
   .who_area {
     padding: 70px 0px 40px;
   }
 }
+
+
 
 .causes_area {
   padding: 130px 0px 100px;
