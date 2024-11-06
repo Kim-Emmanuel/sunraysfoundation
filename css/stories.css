@@ -1,0 +1,174 @@
+.who_area {
+  height: 100svh;
+  overflow: hidden;
+}
+
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+}
+
+.slides-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* Do NOT use overflow: hidden here unless you INTEND to hide overflowing content WITHIN the slides themselves */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+  transform: translateX(100%);
+  /* Initially off-screen */
+}
+
+.slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+
+.slide .row {
+  display: flex;
+  align-items: center;
+}
+
+.slide .content {
+  padding: 20px;
+}
+
+
+/* Appealing entrance animations */
+.slide.active .image-container {
+  animation: slideInFromLeft 0.7s ease-in-out forwards;
+}
+
+.slide.active h2 {
+  animation: fadeInUp 0.7s ease-in-out forwards;
+}
+
+.slide.active p,
+.slide.active .primary_btn {
+  animation: fadeInUp 0.7s ease-in-out 0.2s forwards;
+  /* Slight delay for content */
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* Initial state of elements (hidden)  */
+.slide .image-container,
+.slide h2,
+.slide p,
+.slide .primary_btn {
+  opacity: 0;
+}
+
+.slide .image-container {
+  transform: translateX(-50px);
+}
+
+.slide h2,
+.slide p,
+.slide .primary_btn {
+  transform: translateY(20px);
+}
+
+
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /* Align to the left edge */
+  transform: translateY(-50%);
+  width: 100%;
+  /* Full width */
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  /* Distribute buttons to edges */
+  padding: 0 20px;
+  /* Add some horizontal padding */
+}
+
+
+
+.slider-control {
+  background: rgba(0, 0, 0, 0.5);
+  color: #93C740;
+  padding: 10px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+  border: none;
+  /* Remove button default border */
+  transition: background-color 0.3s ease;
+
+}
+
+
+.slider-control:hover {
+  background-color: rgba(200, 200, 200, 0.2);
+  color: #93C740;
+}
+
+
+.slider-indicators {
+  color: #93C740;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+}
+
+.slider-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the active indicator */
+.slider-indicator.active {
+  background-color: white;
+  /* Or your desired active color */
+  transform: scale(1.2);
+  /* Subtle scaling effect */
+}

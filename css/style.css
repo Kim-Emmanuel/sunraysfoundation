@@ -817,23 +817,31 @@ button:focus {
 /* Start Our History Area css
 ============================================================================================ */
 .image-container {
-  width: 100%; /* Or a specific width if you need a fixed-width gallery */
-  aspect-ratio: 16 / 9; /* Example: 16:9 aspect ratio. Adjust as needed. */
-  position: relative; /* For positioning the overlay */
-  overflow: hidden; /* Hide overflowing image content */
+  width: 100%;
+  /* Or a specific width if you need a fixed-width gallery */
+  aspect-ratio: 16 / 9;
+  /* Example: 16:9 aspect ratio. Adjust as needed. */
+  position: relative;
+  /* For positioning the overlay */
+  overflow: hidden;
+  /* Hide overflowing image content */
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Cover the entire container, cropping if necessary */
-  transition: transform 0.3s ease; /* Smooth image transform on hover */
-  display: block;  /* Prevents a small gap at the bottom in some cases */
+  object-fit: cover;
+  /* Cover the entire container, cropping if necessary */
+  transition: transform 0.3s ease;
+  /* Smooth image transform on hover */
+  display: block;
+  /* Prevents a small gap at the bottom in some cases */
 }
 
 .overlay {
   position: absolute;
-  inset: 0; /* Shorthand for top: 0; right: 0; bottom: 0; left: 0; */
+  inset: 0;
+  /* Shorthand for top: 0; right: 0; bottom: 0; left: 0; */
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   display: flex;
@@ -841,12 +849,14 @@ button:focus {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Prevent overlay from interfering with image hover */
+  pointer-events: none;
+  /* Prevent overlay from interfering with image hover */
 }
 
 .image-container:hover .overlay {
   opacity: 1;
-  pointer-events: auto; /* Allow interaction with the overlay on hover */
+  pointer-events: auto;
+  /* Allow interaction with the overlay on hover */
 }
 
 .image-container:hover img {
@@ -872,14 +882,15 @@ button:focus {
 ============================================================================================ */
 .who_area {
   padding: 130px 0px 70px;
+  overflow: hidden;
+  /* Prevent content from overflowing outside the section during transitions */
 }
 
 /* strong {
   color: #913A04;
 } */
 
-.fa-heart-o
-{
+.fa-heart-o {
   color: #E21C1C;
 }
 
@@ -888,7 +899,6 @@ button:focus {
     padding: 70px 0px 40px;
   }
 }
-
 
 
 .causes_area {
@@ -2451,8 +2461,61 @@ button:focus {
 ============================================================================================ */
 /*============== contact_area css ================*/
 .mapBox {
-  height: 420px;
+
   margin-bottom: 80px;
+}
+
+/* Responsive Map Container */
+.mapBox {
+  position: relative;
+  /* Needed for absolute positioning of the iframe */
+  width: 100%;
+  /* Always take full width of parent */
+  padding-bottom: 56.25%;
+  /* Aspect ratio 16:9 (adjust as needed) */
+  /* height: 0;  Alternate aspect ratio method */
+  overflow: hidden;
+  /* Hide any content overflowing the container */
+}
+
+
+.mapBox iframe {
+  position: absolute;
+  /* Absolute positioning within the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* Optional: Media Queries for Fine-Tuning */
+@media (min-width: 768px) {
+
+  /* Tablet and larger */
+  .mapBox {
+    padding-bottom: 60%;
+    /* Adjust aspect ratio if needed for tablets */
+    /* Or use alternate method: height: 400px;  */
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* Desktop */
+  .mapBox {
+    padding-bottom: 56.25%;
+    /* Standard 16:9 aspect ratio for desktop */
+    /* Or use alternate method: height: 500px; */
+  }
+
+  .map-container.larger-on-desktop {
+    /* Example class for a larger map on desktop */
+    padding-bottom: 65%;
+    /* Wider aspect ratio */
+    /* Or use alternate method: height: 600px;  */
+  }
 }
 
 

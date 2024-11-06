@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" as="style" />
 	<link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -251,119 +252,127 @@
 	<!--================Contact Area =================-->
 	<section class="contact_area section_gap">
 		<div class="container">
-			<div id="mapBox" class="mapBox" data-lat="4.868036817560153" data-lon="31.591447766211918" data-zoom="13"
-				data-info="South Sudan, Juba." data-mlat="40.701083" data-mlon="-74.1522848">
-			</div>
 			<div class="row">
-				<div class="col-lg-12">
-					<div class="contact_info">
-						<div class="row">
-							<div class="col-md-6 col-lg-3">
-								<div class="info_item">
-									<i class="lnr lnr-home"></i>
-									<h6>Juba, South Sudan</h6>
-									<p>Thongping, Scenius Hub Next to Winners Chapel</p>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="info_item">
-									<i class="lnr lnr-phone-handset"></i>
-									<h6><a href="#">+211 929 975 708</a></h6>
-									<p>Mon to Fri 9am to 6pm</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-6 col-lg-3">
-								<div class="info_item">
-									<i class="lnr lnr-home"></i>
-									<h6>Nairobi, Kenya</h6>
-									<p>Shalom House, St.Daniel Comboni Road Off Ngong Road</p>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="info_item">
-									<i class="lnr lnr-phone-handset"></i>
-									<h6><a href="#">+254 702 676 918</a></h6>
-									<p>Mon to Fri 9am to 6pm</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-6 col-lg-3">
-								<div class="info_item">
-									<i class="lnr lnr-home"></i>
-									<h6>Kampala, Uganda</h6>
-									<p></p>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="info_item">
-									<i class="lnr lnr-phone-handset"></i>
-									<h6><a href="#">+256 766 959 352</a></h6>
-									<p>Mon to Fri 9am to 6pm</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-6 col-lg-3">
-								<div class="info_item">
-									<i class="lnr lnr-home"></i>
-									<h6>LESOTHO OFFICE</h6>
-									<p></p>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="info_item">
-									<i class="lnr lnr-phone-handset"></i>
-									<h6><a href="#">+266 5680 8083</a></h6>
-									<p>Mon to Fri 9am to 6pm</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-12">
-								<div class="info_item">
-									<i class="lnr lnr-envelope"></i>
-									<h6><a href="#">info@sunraysfoundation.org</a></h6>
-									<p>Send us your query anytime!</p>
-								</div>
-							</div>
-						</div>
-
+				<div class="col-12"> <!-- Or adjust column size as needed -->
+					<div class="mapBox ratio ratio-16x9"> <!-- Use ratio for responsiveness -->
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7905831745843!2d36.751709073959624!3d-1.3005031986871387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a46a8d61f75%3A0xd55717310205d288!2sShalom%20House!5e0!3m2!1sen!2ske!4v1730897024747!5m2!1sen!2ske"
+							width="800" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade" title="Shalom House map"
+							aria-label="Shalom House map"></iframe>
 					</div>
 				</div>
-				<div class="col-lg-8">
-					<form class="row contact_form justify-content-center" action="contact_process.php" method="post"
-						id="contactForm" novalidate="novalidate">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="contact_info">
+							<div class="row">
+								<div class="col-md-6 col-lg-3">
+									<div class="info_item">
+										<i class="lnr lnr-home"></i>
+										<h6>Juba, South Sudan</h6>
+										<p>Thongping, Scenius Hub Next to Winners Chapel</p>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="info_item">
+										<i class="lnr lnr-phone-handset"></i>
+										<h6><a href="#">+211 929 975 708</a></h6>
+										<p>Mon to Fri 9am to 6pm</p>
+									</div>
+								</div>
 							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+
+							<div class="row">
+								<div class="col-md-6 col-lg-3">
+									<div class="info_item">
+										<i class="lnr lnr-home"></i>
+										<h6>Nairobi, Kenya</h6>
+										<p>Shalom House, St.Daniel Comboni Road Off Ngong Road</p>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="info_item">
+										<i class="lnr lnr-phone-handset"></i>
+										<h6><a href="#">+254 702 676 918</a></h6>
+										<p>Mon to Fri 9am to 6pm</p>
+									</div>
+								</div>
 							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+
+							<div class="row">
+								<div class="col-md-6 col-lg-3">
+									<div class="info_item">
+										<i class="lnr lnr-home"></i>
+										<h6>Kampala, Uganda</h6>
+										<p></p>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="info_item">
+										<i class="lnr lnr-phone-handset"></i>
+										<h6><a href="#">+256 766 959 352</a></h6>
+										<p>Mon to Fri 9am to 6pm</p>
+									</div>
+								</div>
 							</div>
+
+							<div class="row">
+								<div class="col-md-6 col-lg-3">
+									<div class="info_item">
+										<i class="lnr lnr-home"></i>
+										<h6>LESOTHO OFFICE</h6>
+										<p></p>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-3">
+									<div class="info_item">
+										<i class="lnr lnr-phone-handset"></i>
+										<h6><a href="#">+266 5680 8083</a></h6>
+										<p>Mon to Fri 9am to 6pm</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="info_item">
+										<i class="lnr lnr-envelope"></i>
+										<h6><a href="#">info@sunraysfoundation.org</a></h6>
+										<p>Send us your query anytime!</p>
+									</div>
+								</div>
+							</div>
+
 						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<textarea class="form-control" name="message" id="message" rows="1"
-									placeholder="Enter Message"></textarea>
+					</div>
+					<div class="col-lg-8">
+						<form class="row contact_form justify-content-center" action="contact_process.php" method="post"
+							id="contactForm" novalidate="novalidate">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+								</div>
 							</div>
-						</div>
-						<div class="col-md-12 text-right">
-							<button type="submit" value="submit" class="btn primary_btn">Send Message</button>
-						</div>
-					</form>
+							<div class="col-md-6">
+								<div class="form-group">
+									<textarea class="form-control" name="message" id="message" rows="1"
+										placeholder="Enter Message"></textarea>
+								</div>
+							</div>
+							<div class="col-md-12 text-right">
+								<button type="submit" value="submit" class="btn primary_btn">Send Message</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
 	</section>
 	<!--================Contact Area =================-->
 
@@ -527,12 +536,12 @@
 	<script defer src="js/jquery.validate.min.js"></script>
 	<script defer src="js/contact.js"></script>
 	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkPMFLLdYcqOtulHhJny2Ag3RKrmq8VgU" async
-		defer></script>
-	<script defer src="js/google-map.js"></script>
 	<script defer src="js/gmaps.min.js"></script>
 	<script defer src="js/theme.js"></script>
 	<script src="js/index.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
