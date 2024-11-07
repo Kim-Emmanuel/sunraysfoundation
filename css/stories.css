@@ -1,22 +1,21 @@
 .who_area {
-  height: 100svh;
   overflow: hidden;
+  height: 800px;
+  /* Height will be determined by JavaScript */
 }
 
-
-.slider-container {
+.story-slider-container {
   width: 100%;
   height: 100%;
 }
 
-.slides-wrapper {
+.story-slides-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
-  /* Do NOT use overflow: hidden here unless you INTEND to hide overflowing content WITHIN the slides themselves */
 }
 
-.slide {
+.story-slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,106 +25,45 @@
   pointer-events: none;
   transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
   transform: translateX(100%);
-  /* Initially off-screen */
+  /* Initial position off-screen */
 }
 
-.slide.active {
+.story-slide.active {
   opacity: 1;
   pointer-events: auto;
   transform: translateX(0);
   z-index: 1;
+  /* Ensure active slide is on top */
 }
 
 
-.slide .row {
+/* Styles for content within slides (adjust as needed) */
+.story-slide .row {
   display: flex;
   align-items: center;
 }
 
-.slide .content {
+.story-slide .content {
   padding: 20px;
 }
 
-
-/* Appealing entrance animations */
-.slide.active .image-container {
-  animation: slideInFromLeft 0.7s ease-in-out forwards;
-}
-
-.slide.active h2 {
-  animation: fadeInUp 0.7s ease-in-out forwards;
-}
-
-.slide.active p,
-.slide.active .primary_btn {
-  animation: fadeInUp 0.7s ease-in-out 0.2s forwards;
-  /* Slight delay for content */
-}
-
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-
-/* Initial state of elements (hidden)  */
-.slide .image-container,
-.slide h2,
-.slide p,
-.slide .primary_btn {
-  opacity: 0;
-}
-
-.slide .image-container {
-  transform: translateX(-50px);
-}
-
-.slide h2,
-.slide p,
-.slide .primary_btn {
-  transform: translateY(20px);
-}
+/* ... other content styles ... */
 
 
 
-.slider-controls {
+.story-slider-controls {
   position: absolute;
   top: 50%;
   left: 0;
-  /* Align to the left edge */
   transform: translateY(-50%);
   width: 100%;
-  /* Full width */
   z-index: 2;
   display: flex;
   justify-content: space-between;
-  /* Distribute buttons to edges */
   padding: 0 20px;
-  /* Add some horizontal padding */
 }
 
-
-
-.slider-control {
+.story-slider-control {
   background: rgba(0, 0, 0, 0.5);
   color: #93C740;
   padding: 10px 20px;
@@ -133,42 +71,115 @@
   cursor: pointer;
   margin: 0 5px;
   border: none;
-  /* Remove button default border */
   transition: background-color 0.3s ease;
-
 }
 
-
-.slider-control:hover {
+.story-slider-control:hover {
   background-color: rgba(200, 200, 200, 0.2);
-  color: #93C740;
 }
 
 
-.slider-indicators {
-  color: #93C740;
+.story-slider-indicators {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
   display: flex;
+  justify-content: center;
+  /* Center the indicators */
+  margin-top: 10px;
 }
 
-.slider-indicator {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: 0 5px;
+.story-slider-indicator {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
   border-radius: 50%;
+  margin: 0 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-/* Style the active indicator */
-.slider-indicator.active {
-  background-color: white;
-  /* Or your desired active color */
-  transform: scale(1.2);
-  /* Subtle scaling effect */
+.story-slider-indicator.active {
+  background-color: #93C740;
+}
+
+
+
+/* Transitions */
+.story-slides-wrapper.transitioning .story-slide {
+  opacity: 0;
+}
+
+.story-slides-wrapper.transitioning.next .story-slide {
+  transform: translateX(-100%);
+}
+
+.story-slides-wrapper.transitioning.prev .story-slide {
+  transform: translateX(100%);
+}
+
+.story-slides-wrapper.transitioning .story-slide.active {
+  opacity: 1;
+}
+
+.story-slides-wrapper.transitioning.next .story-slide.active {
+  transform: translateX(0);
+}
+
+.story-slides-wrapper.transitioning.prev .story-slide.active {
+  transform: translateX(0);
+}
+
+
+.story-slides-wrapper:not(.transitioning) .story-slide {
+  transition: none;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.story-slides-wrapper:not(.transitioning) .story-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+/*Responsiveness*/
+@media (max-width: 767px) {
+
+  /* Mobile */
+  .story-slide .row {
+    flex-direction: column;
+  }
+
+  /* Stack content vertically */
+  .story-slide .content {
+    order: 1;
+  }
+
+  /* Content first */
+  .story-slide .image-container {
+    order: 2;
+    margin-top: 20px;
+  }
+
+  /* Image second */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablet */
+  /* Adjust styles as needed for tablets */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Desktop */
+  /* Adjust styles as needed for desktops */
+}
+
+@media (min-width: 1200px) {
+  /* Extra Large Devices */
+  /* Adjust styles as needed for extra large devices */
 }
